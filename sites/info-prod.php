@@ -1,0 +1,1 @@
+<h1>Trang thông tin sản phẩm</h1>
