@@ -69,7 +69,7 @@
 
             <footer>
                 <div class="container_footer">
-                    <div class="item1">
+                    <div class="itemI">
                         <img src="<?=CONTENT_URL?>Images/P-SHOP.png" alt="">
 
                         <p class="slogen">Trân trọng từng cảm xúc mùi hương của bạn!</p> <br>
@@ -77,7 +77,7 @@
                         <p><strong>Địa chỉ: Phố Trịnh Văn Bô</strong></p>
                     </div>
 
-                    <div class="item2">
+                    <div class="itemII">
                         <h3>Thông tin liên hệ</h3>
 
                         <ul>
@@ -91,7 +91,7 @@
                         </ul>
                     </div>
 
-                    <div class="item3">
+                    <div class="itemIII">
                         <h3>Nước hoa bán chạy</h3>
 
                         <ul>

@@ -224,70 +224,70 @@ footer{
     justify-items: center;
 }
 
-.item1>img{
+.itemI>img{
     width: 80%;
     margin-top: -70px;
 }
 
-.item1>.slogen{
+.itemI>.slogen{
     margin-top: -110px;
     margin-left: 85px;
     width: 200px;
     color: white;
 }
 
-.item1>p>strong{
+.itemI>p>strong{
     margin-left: 85px;
     color: white;
 }
 
-.item2{
+.itemII{
     margin-top: 70px;
 }
 
-.item2>h3{
+.itemII>h3{
     margin-bottom: 20px;
     color: white;
 }
 
 
-.item2>ul{
+.itemII>ul{
     margin: 0;
     padding: 0;
 }
 
-.item2>ul>li{
+.itemII>ul>li{
     list-style: none;
 }
 
-.item2>ul>li>p{
+.itemII>ul>li>p{
     margin-bottom: 5px;
     color: white;
 }
 
-.item2>ul>li>p>span{
+.itemII>ul>li>p>span{
     text-decoration: underline;
 }
 
-.item3{
+.itemIII{
     margin-top: 70px;
 }
 
-.item3>h3{
+.itemIII>h3{
     color: white;
     margin-bottom: 20px;
 }
 
-.item3>ul>li{
+.itemIII>ul>li{
     list-style: none;
 }
 
-.item3>ul>li>a{
+.itemIII>ul>li>a{
     text-decoration: none;
     color: white;
 }
 
-.item3>ul>li>a>p{
+.itemIII>ul>li>a>p{
     margin-bottom: 5px;
 }
 
