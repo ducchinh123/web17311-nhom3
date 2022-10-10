@@ -33,7 +33,7 @@
             <tbody>
                 <tr>
                     <td>NHCDM 01</td>
-                    <td><img width="100px" height="105px" src="./Images/product/825c93fd9d23597d00326.jpg"></td>
+                    <td><img width="100px" height="105px" src="<?=CONTENT_URL?>Images/product/1.jpg"></td>
                     <td>Dior</td>
                     <td>M</td>
                     <td>- 1 +</td>
