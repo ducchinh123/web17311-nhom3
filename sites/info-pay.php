@@ -1,0 +1,1 @@
+<h2>Chính sẽ đưa thông tin thanh toán vào đây.</h2>
