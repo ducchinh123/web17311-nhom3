@@ -907,3 +907,268 @@ form>center>.submit_dk:hover{
 
 
 /* end  */
+
+
+/* css cho thông tin thanh toán */
+.main{
+    width: 100%;
+    height: auto;
+    
+
+}
+
+.title_list{
+    color: #DB7093;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+.title_list>a{
+    text-decoration: none;
+    color: #DB7093;
+}
+
+.border-bottom{
+    border-bottom: 1px solid gray;
+}
+
+form>.container_info{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 47.5% 39%;
+    grid-template-rows: 500px;
+    grid-column-gap: 10px;
+    margin-top: 15px;
+    justify-content: center;
+
+
+}
+
+.info_left{
+    width: 100%;
+    height: auto;
+}
+
+.info_left>h3{
+    font-weight: 600;
+}
+
+.info_left>.border-bottom{
+    width: 19%;
+    border-bottom: 1.5px solid black;
+}
+
+.name_name{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+ 
+}
+
+.input_name1{
+    width: 50%;
+    float: left;
+}
+
+.input_name1>p{
+   margin-bottom: 10px;
+}
+
+.input_name1>input{
+    width: 320px;
+    padding: 10px 10px;
+}
+
+.input_name2{
+    width: 50%;
+    float: right;
+}
+
+.input_name2>p{
+    margin-bottom: 10px;
+}
+
+.input_name2>ul>li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.info_left>.input_sdt{
+    width: 100%;
+    height: auto;
+    clear: both;
+    margin-top: 120px;
+   
+}
+
+.input_sdt>p{
+    margin-bottom: 10px;
+}
+
+.input_sdt>input{
+    width: 320px;
+    padding: 10px 10px;
+}
+
+
+.address{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.address>p{
+    margin-bottom: 10px;
+}
+
+.sum_input_address{
+    display: grid;
+    grid-template-columns: 320px 320px;
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+}
+
+.sum_input_address>select{
+    padding: 10px 10px;
+}
+
+.sum_input_address>input{
+    padding: 10px 10px;
+}
+
+
+.feedback{
+    margin-top: 30px;
+}
+
+.feedback>p{
+    margin-bottom: 10px;
+}
+
+.feedback>textarea{
+    color: red;
+}
+
+
+
+.info_right{
+    width: 100%;
+    height: auto;
+    display: grid;
+}
+
+.info_right>h3{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* .info_right>.border-bottom{
+    width: 20%;
+    border-bottom: 1.5px solid black;
+    margin-bottom: 20px;
+
+} */
+
+.order{
+    width: 100%;
+    height: auto;
+}
+.order>p{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.order>.item_pro{
+    float: left;
+}
+
+.order>.item_sum{
+    float: right;
+    margin-right: 143px;
+}
+
+.info_order_left{
+    width: 50%;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.info_order_left>p{
+    margin-bottom: 15px;
+}
+
+.info_order_left>p>span{
+    padding: 5px 10px;
+    background-color: greenyellow;
+}
+
+
+.info_order_right{
+    width: 30%;
+    height: auto;
+    float: right;
+}
+
+.info_order_right{
+   margin-top: 20px;
+}
+
+.info_order_right>p{
+   color: red;
+   padding: 10px 20px;
+   background-color: gray;
+}
+
+.border-bottom2{
+    width: 100%;
+    border-bottom: 2px solid gray;
+    clear: both;
+}
+
+.sum_orders{
+    margin-top: 10px;
+}
+
+.sum_orders>span{
+    color: red;
+    text-decoration: underline;
+}
+
+
+.pay_method{
+    margin-top: 30px;
+}
+
+.pay_method>p{
+    margin-bottom: 10px;
+}
+
+.pay_method>ul>li{
+    list-style: none;
+    
+}
+
+.pay_method>ul{
+    margin-left: 10px;
+}
+
+.info_right>button{
+    padding: 0px 30px;
+    font-size: 16px;
+    background-color: #DB7093;
+    color: white;
+    border-radius: 3px;
+    justify-self: center;
+    border: 1px solid pink;
+
+}
+
+.info_right>button:hover{
+    background-color: white;
+    color: palevioletred;
+}
+
+/* end  */
