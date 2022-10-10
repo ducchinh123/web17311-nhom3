@@ -1,1 +1,0 @@
-<h2>Lương sẽ chèn code đổi mật khẩu vào đây.</h2>
