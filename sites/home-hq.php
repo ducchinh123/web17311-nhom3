@@ -49,16 +49,16 @@
         <section class="section1">
             <div class="section-item">
                 <div class="item1">
-                    <div class="item-img bg-pink"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a>
+                    <div class="item-img bg-pink"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a>
                     </div>
                     <div class="item-tittle">Nước hoa nam</div>
                 </div>
                 <div class="item1">
-                    <div class="item-img bg-blue1"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                    <div class="item-img bg-blue1"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                     <div class="item-tittle">Nước hoa nam</div>
                 </div>
                 <div class="item1">
-                    <div class="item-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                    <div class="item-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                     <div class="item-tittle">Nước hoa nam</div>
                 </div>
             </div>
@@ -76,22 +76,22 @@
                 </div>
                 <div class="slider2-item2">
                     <div class="item2">
-                        <div class="item2-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item2-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item2-tittle">Versace Bright Absolu</div>
                         <div class="item2-price bg-price-color">100$</div>
                     </div>
                     <div class="item2">
-                        <div class="item2-img bg-blue2"><a href="#"><img src="./Images/product/10.png" alt=""></a></div>
+                        <div class="item2-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/10.png" alt=""></a></div>
                         <div class="item2-tittle">Versace Bright Crystal</div>
                         <div class="item2-price bg-price-color">70$</div>
                     </div>
                     <div class="item2">
-                        <div class="item2-img bg-blue2"><a href="#"><img src="./Images/product/2.png" alt=""></a></div>
+                        <div class="item2-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/2.png" alt=""></a></div>
                         <div class="item2-tittle">Lancôme Poême</div>
                         <div class="item2-price bg-price-color">80$</div>
                     </div>
                     <div class="item2">
-                        <div class="item2-img bg-blue2"><a href="#"><img src="./Images/product/5.png" alt=""></a></div>
+                        <div class="item2-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/5.png" alt=""></a></div>
                         <div class="item2-tittle">Lolita Lempicka For Women</div>
                         <div class="item2-price bg-price-color">65$$</div>
                     </div>
@@ -115,43 +115,43 @@
 
                 <div class="section3-item3">
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
 
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
@@ -175,43 +175,43 @@
 
                 <div class="section3-item3">
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
 
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
@@ -235,43 +235,43 @@
 
                 <div class="section3-item3">
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
 
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="#"><img src="./Images/product/zyro-image.png" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/product/zyro-image.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
