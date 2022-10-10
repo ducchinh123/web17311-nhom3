@@ -321,3 +321,111 @@ footer{
     
 }
 /* end */
+
+
+
+
+
+
+
+
+
+
+/* style gio hang */
+.main {
+    width: 100%;
+    height: auto;
+}
+
+.main .main-top {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main .main-top p {
+    padding-left: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FCA2C0;
+    border-bottom: 1px solid #808080;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table thead {
+    background-color: #DCDCDC;
+}
+
+table thead tr td {
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-bottom: none;
+    text-align: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+table tbody tr td {
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-top: none;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+table tbody tr td button {
+    background-color: none;
+    border: none;
+}
+
+table tbody tr td button i {
+    font-size: 30px;
+}
+
+.main .main-bottom {
+    margin-left: 960px;
+    margin-top: 20px;
+}
+
+.main .main-bottom h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    padding-bottom: 10px;
+}
+
+.main .main-bottom h3 a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FF0000;
+}
+
+.main .main-bottom button {
+    width: 156px;
+    height: 50px;
+    background-color: #FFC0CB;
+    border-radius: 5px;
+    border: none;
+}
+/* end */
