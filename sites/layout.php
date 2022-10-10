@@ -43,9 +43,9 @@
                             <li><i class="click fa-solid fa-house-user"></i><a href="<?=SITE_URL?>">Trang chủ</a></li>
                             <li><i class="fa-regular fa-newspaper"></i><a href="<?=SITE_URL?>?prod">Sản phẩm</a>
                                 <ul class="menu-level">
-                                    <li><a href=""><i class="fa-solid fa-play"></i>Nước hoa nữ</a></li>
-                                    <li><a href=""><i class="fa-solid fa-play"></i>Nước hoa nam</a></li>
-                                    <li><a href=""><i class="fa-solid fa-play"></i>Nước hoa cho bé</a></li>
+                                    <li><a href="<?=SITE_URL?>?search-cate"><i class="fa-solid fa-play"></i>Nước hoa nữ</a></li>
+                                    <li><a href="<?=SITE_URL?>?search-cate-for-boy"><i class="fa-solid fa-play"></i>Nước hoa nam</a></li>
+                                    <li><a href="<?=SITE_URL?>?search-cate-for-kid"><i class="fa-solid fa-play"></i>Nước hoa cho bé</a></li>
                                 </ul>
                             </li>
                             <li><i class="clicks fa-solid fa-message"></i><a href="">Thông tin</a></a></li>
