@@ -28,7 +28,7 @@
          $VIEW_NAME="search-cate-kid.php";
      }
      else{
-         $VIEW_NAME = "home.php";
+         $VIEW_NAME = "home-hq.php";
  
      }
 
