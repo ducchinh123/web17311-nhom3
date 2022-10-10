@@ -12,42 +12,42 @@
 </head>
 
 <body>
-        <div class="main">
-            <div class="main-top">
-                <p>Trang chủ > Nước hoa nữ > CHRISTIAN DIOR Miss > Giỏ hàng </p>
-            </div>
-
-            <table>
-                <thead>
-                    <tr>
-                        <td>Mã sản phẩm</td>
-                        <td>Hình ảnh sản phẩm</td>
-                        <td>Thương hiệu</td>
-                        <td>Size</td>
-                        <td>Số lượng</td>
-                        <td>Thành tiền</td>
-                        <td>Thao tác</td>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>NHCDM 01</td>
-                        <td><img width="100px" height="105px" src="./Images/product/825c93fd9d23597d00326.jpg"></td>
-                        <td>Dior</td>
-                        <td>M</td>
-                        <td>- 1 +</td>
-                        <td style="color: red;">2.690.000₫</td>
-                        <td><button><i class="fa-solid fa-trash"></i></button></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="main-bottom">
-                <h3>Tổng: <a>2.690.000₫</a></h3>
-                <button>Thanh toán</button>
-            </div>
+    <div class="main">
+        <div class="main-top">
+            <p>Trang chủ > Nước hoa nữ > CHRISTIAN DIOR Miss > Giỏ hàng </p>
         </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Mã sản phẩm</td>
+                    <td>Hình ảnh sản phẩm</td>
+                    <td>Thương hiệu</td>
+                    <td>Size</td>
+                    <td>Số lượng</td>
+                    <td>Thành tiền</td>
+                    <td>Thao tác</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>NHCDM 01</td>
+                    <td><img width="100px" height="105px" src="./Images/product/825c93fd9d23597d00326.jpg"></td>
+                    <td>Dior</td>
+                    <td>M</td>
+                    <td>- 1 +</td>
+                    <td style="color: red;">2.690.000₫</td>
+                    <td><button><i class="fa-solid fa-trash"></i></button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="main-bottom">
+            <h3>Tổng: <a>2.690.000₫</a></h3>
+            <a href="<?=SITE_URL?>?info-pay"><button type="submit">Thanh toán</button></a>
+        </div>
+    </div>
 
     </div>
 </body>
