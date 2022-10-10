@@ -3,10 +3,10 @@
     require_once "../global.php";
 
 
-    if (isset($_GET['prod'])) {
-       $VIEW_NAME="prod.php";
-    }elseif(isset($_GET['cart'])){
-        $VIEW_NAME="cart.php";
+    if (isset($_GET['info-prod'])) {
+       $VIEW_NAME="info-prod.php";
+    }elseif(isset($_GET['info-cart'])){
+        $VIEW_NAME="info-cart.php";
     }elseif(isset($_GET['search-cate'])){
         $VIEW_NAME="search-cate.php";
     }elseif(isset($_GET['search-cate-for-boy'])){
@@ -15,7 +15,7 @@
         $VIEW_NAME="search-cate-for-kid.php";
     }
     else{
-        $VIEW_NAME = "pay.php";
+        $VIEW_NAME = "home.php";
 
     }
 
