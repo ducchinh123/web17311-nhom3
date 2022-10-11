@@ -40,7 +40,7 @@
 
                             
                                        <center><button class="submit_dk" type="submit">Đăng kí</button></center> <br>
-                                           <center>hoặc <a href="<?=SITE_URL?>?log-in" style="text-decoration: none;">Đăng nhập</a></center> 
+                                           <center>hoặc <a href="<?=SITE_URL?>?sign-in" style="text-decoration: none;">Đăng nhập</a></center> 
                                 </form>
                         </section>
                 </div>
