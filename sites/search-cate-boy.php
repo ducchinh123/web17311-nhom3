@@ -25,7 +25,7 @@
                                 <div class="prod1">
                                     <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
 
-                                   <a href=""><p>LANCOME La vie Est </p></a> 
+                                   <a href="<?=SITE_URL?>?info-prod"><p>LANCOME La vie Est </p></a> 
 
                                     <p class="price">2.450.000₫</p>
 
@@ -34,7 +34,7 @@
                                 <div class="prod2">
                                     <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
 
-                                   <a href=""><p>CHRISTIAN DIOR Miss</p></a> 
+                                   <a href="<?=SITE_URL?>?info-prod"><p>CHRISTIAN DIOR Miss</p></a> 
 
                                     <p class="price">2.690.000₫</p>
                                 </div>
@@ -42,7 +42,7 @@
                                 <div class="prod3">
                                     <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
 
-                                    <a href=""><p>Bvlgari Rose Goldea</p></a>
+                                    <a href="<?=SITE_URL?>?info-prod"><p>Bvlgari Rose Goldea</p></a>
 
                                     <p class="price">490.000 ₫</p>
                                 </div>
@@ -50,7 +50,7 @@
                                 <div class="prod4">
                                     <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
 
-                                    <a href=""><p>Versace Pour Homme </p></a>
+                                    <a href="<?=SITE_URL?>?info-prod"><p>Versace Pour Homme </p></a>
 
                                     <p class="price">2.068.000 ₫</p>
                                 </div>
@@ -60,7 +60,7 @@
                                 <div class="prod5">
                                     <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
 
-                                    <a href=""><p>Versace Bright Absolu</p></a>
+                                    <a href="<?=SITE_URL?>?info-prod"><p>Versace Bright Absolu</p></a>
 
                                     <p class="price">2.393.000₫</p>
 
@@ -69,14 +69,14 @@
                                 <div class="prod6">
                                     <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
 
-                                   <a href=""> <p>Versace Bright Crystal</p></a>
+                                   <a href="<?=SITE_URL?>?info-prod"> <p>Versace Bright Crystal</p></a>
 <p class="price">1.701.000₫</p>
                                 </div>
 
                                 <div class="prod7">
                                     <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
 
-                                    <a href=""><p>Gucci Bloom For Women</p></a>
+                                    <a href="<?=SITE_URL?>?info-prod"><p>Gucci Bloom For Women</p></a>
 
                                     <p class="price">2.069.000 ₫</p>
                                 </div>
@@ -84,7 +84,7 @@
                                 <div class="prod8">
                                     <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
 
-                                    <a href=""><p>Lolita Lempicka For Women</p></a>
+                                    <a href="<?=SITE_URL?>?info-prod"><p>Lolita Lempicka For Women</p></a>
 
                                     <p class="price">1.600.000₫</p>
                                 </div>

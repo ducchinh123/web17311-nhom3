@@ -26,7 +26,7 @@
                 <div class="prod1">
                     <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
 
-                    <a href="">
+                    <a href="<?=SITE_URL?>?info-prod">
                         <p>LANCOME La vie Est </p>
                     </a>
 
@@ -37,7 +37,7 @@
                 <div class="prod2">
                     <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
 
-                    <a href="">
+                    <a href="<?=SITE_URL?>?info-prod">
                         <p>CHRISTIAN DIOR Miss</p>
                     </a>
 
@@ -47,7 +47,7 @@
                 <div class="prod3">
                     <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
 
-                    <a href="">
+                    <a href="<?=SITE_URL?>?info-prod">
                         <p>Bvlgari Rose Goldea</p>
                     </a>
 
@@ -57,7 +57,7 @@
                 <div class="prod4">
                     <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
 
-                    <a href="">
+                    <a href="<?=SITE_URL?>?info-prod">
                         <p>Versace Pour Homme </p>
                     </a>
 
@@ -69,7 +69,7 @@
                 <div class="prod5">
                     <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
 
-                    <a href="">
+                    <a href="<?=SITE_URL?>?info-prod">
                         <p>Versace Bright Absolu</p>
                     </a>
 
@@ -80,7 +80,7 @@
                 <div class="prod6">
                     <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
 
-                    <a href="">
+                    <a href="<?=SITE_URL?>?info-prod">
                         <p>Versace Bright Crystal</p>
                     </a>
 
@@ -90,7 +90,7 @@
                 <div class="prod7">
                     <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
 
-                    <a href="">
+                    <a href="<?=SITE_URL?>?info-prod">
                         <p>Gucci Bloom For Women</p>
                     </a>
 <p class="price">2.069.000 ₫</p>
@@ -99,7 +99,7 @@
                 <div class="prod8">
                     <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
 
-                    <a href="">
+                    <a href="<?=SITE_URL?>?info-prod">
                         <p>Lolita Lempicka For Women</p>
                     </a>
 
