@@ -40,10 +40,12 @@
                         <span>1</span>
                         <button>+</button>
                     </p>
-
+                <a href="<?=SITE_URL?>?info-cart ">
                     <button class="mt-6 px-4 bg-[#FFB6C1] font-[400] text-[16px] rounded-[5px]">
-                        Thêm vào giỏ
+                      
+                    Thêm vào giỏ
                     </button>
+                    </a>
                 </div>
                 <div class="price mt-[120px] text-left h-[25px] px-5 font-[400] text-[16px] bg-[#FFB6C1] ">
                     <p class="">Giá: <span class="text-[#FF0000]">2.690.000đ</span></p>
