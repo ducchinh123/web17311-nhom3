@@ -40,7 +40,7 @@
                         <span>1</span>
                         <button>+</button>
                     </p>
-                <a href="<?=SITE_URL?>?info-cart ">
+                <a href="<?=SITE_URL?>?info-cart">
                     <button type="submit" class="mt-6 px-4 bg-[#FFB6C1] font-[400] text-[16px] rounded-[5px]">
                       
                     Thêm vào giỏ
