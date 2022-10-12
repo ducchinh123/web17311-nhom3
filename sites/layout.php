@@ -22,8 +22,9 @@
                     </div>
 
                     <div class="find">
+                        
                         <div><input type="search" placeholder="  Bạn muốn tìm gì..."></div>
-                        <div><button><i class="fa-solid fa-magnifying-glass"></i></button></div>
+                        <div><button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button></div>
                     </div>
                     <div class="icon">
                         <div class="phone">
