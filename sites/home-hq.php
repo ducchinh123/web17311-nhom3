@@ -175,7 +175,7 @@
 
                 <div class="section3-item3">
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/13.jpg" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/13.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
@@ -261,7 +261,7 @@
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/13.jpg" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/13.png" alt=""></a></div>
                         <div class="item3-tittle">Nước hoa nam</div>
                         <div class="item2-price bg-price-color">1.000.333$</div>
                     </div>
