@@ -19,7 +19,7 @@
         <div class="slider">
             <div class="waper">
                 <div class="waper-left">
-                    <a href="#"><img src="<?=CONTENT_URL?>/Images/banner/5c89636269bcade2f4ad.jpg" alt=""></a>
+                    <a href="#"><img src="<?=CONTENT_URL?>/Images/banner/5c89636269bcade2f4ad.jpg" alt="banner"></a>
 
                     <div class="btn-next-left"><i class="fa-solid fa-angle-right"></i></div>
 
@@ -37,8 +37,8 @@
 
                 </div>
                 <div class="waper-right">
-                    <div> <a href="#"><img src="./Images/banner/0f2d2bc62118e546bc09.jpg" alt=""></a></div>
-                    <div> <a href="#"></a><img src="./Images/banner/a2b7445c4e828adcd393.jpg" alt=""></a></div>
+                    <div> <a href="#"><img src="<?=CONTENT_URL?>/Images/banner/0f2d2bc62118e546bc09.jpg" alt=""></a></div>
+                    <div> <a href="#"></a><img src="<?=CONTENT_URL?>/Images/banner/a2b7445c4e828adcd393.jpg" alt=""></a></div>
 
                 </div>
             </div>
