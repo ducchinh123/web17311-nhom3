@@ -19,7 +19,7 @@
         <div class="slider">
             <div class="waper">
                 <div class="waper-left">
-                    <a href="#"><img src="./Images/banner/5c89636269bcade2f4ad.jpg" alt=""></a>
+                    <a href="#"><img src="<?=CONTENT_URL?>/Images/banner/5c89636269bcade2f4ad.jpg" alt=""></a>
 
                     <div class="btn-next-left"><i class="fa-solid fa-angle-right"></i></div>
 
