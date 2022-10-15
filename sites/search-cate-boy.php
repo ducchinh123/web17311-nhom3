@@ -1,3 +1,11 @@
+<?php
+
+        
+    
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +22,7 @@
 
             <div class="main">
                 <p><a href="">Sản phẩm</a> > <a href="">Nước hoa nam</a></p>
-                <div class="border-bottom"></div>
+                <div class="border-bottom"></div> 
 
                 <div class="contai_cate">
                         <div class="cate_title">

@@ -145,7 +145,7 @@
                 </div>
 
                 <div class="creater">
-                    <p>© Copyright by Dang Duc Chinh (Group 3)</p>
+                    <p>© Copyright by Nhóm 3</p>
                 </div>
             </footer>
 
