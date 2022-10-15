@@ -1,11 +1,3 @@
-<?php
-    require_once "..dao/products.php";
-
-
-    
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
