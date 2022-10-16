@@ -1,7 +1,7 @@
 <?php
 
-    require "dao/pdo.php";
-    require "dao/categories.php";
+    require "./dao/pdo.php";
+    require "./dao/categories.php";
 
     if (isset($_POST['id'])) {
         update_cate($_POST['id'], $_POST['name']);

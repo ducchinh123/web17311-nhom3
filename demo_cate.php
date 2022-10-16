@@ -1,7 +1,7 @@
 <?php
 
-    require "dao/pdo.php";
-    require "dao/categories.php";
+    require "./dao/pdo.php";
+    require "./dao/categories.php";
 
 
     // Thêm mới
