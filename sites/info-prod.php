@@ -4,11 +4,7 @@
 require_once "../dao/pdo.php";
 require_once "../dao/products.php";
 
-    if (isset($_GET['id'])) {
-        $dsPROD = get_info_prod($_GET['id']);
-        var_dump($dsPROD);
-    }
-
+    
     
 
 

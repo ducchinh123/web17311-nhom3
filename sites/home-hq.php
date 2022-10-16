@@ -1,9 +1,13 @@
 <?php
     require_once "../dao/pdo.php";
     require_once "../dao/products.php";
+    require_once "../dao/product-img.php";
+   
     
-    $dsALL = select_prodALL();
-    var_dump($dsALL);
+
+    // var_dump($dsALL);
+    $dsIMG = select_imgAll();
+    var_dump($dsIMG);
 
     
 
@@ -129,7 +133,7 @@
 
                     <?php
 
-                            foreach ($dsALL as $item) {
+                            foreach ($dsIMG as $item) {
                             
                             
 
@@ -137,9 +141,9 @@
                     ?>
                    
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/10.jpg" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?php echo $item['main']  ?>" alt=""></a></div>
                         <div class="item3-tittle"><?php echo $item['name']  ?></div>
-                        <div class="item2-price bg-price-color"><?php echo $item['price'] ?></div>
+                        <div class="item2-price bg-price-color"><?php echo $item['price'] ?>$</div>
                     </div>
 
 
