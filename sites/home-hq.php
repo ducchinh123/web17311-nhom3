@@ -1,6 +1,11 @@
 <?php
+    require_once "../dao/pdo.php";
+    require_once "../dao/products.php";
     
+    $dsALL = select_prodALL();
+    var_dump($dsALL);
 
+    
 
 ?>
 
@@ -121,47 +126,29 @@
 
 
                 <div class="section3-item3">
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/5.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
-                    </div>
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/6.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
-                    </div>
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/7.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
-                    </div>
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/8.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
 
-                    </div>
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/9.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
-                    </div>
+                    <?php
+
+                            foreach ($dsALL as $item) {
+                            
+                            
+
+
+                    ?>
+                   
                     <div class="item3">
                         <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/10.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
+                        <div class="item3-tittle"><?php echo $item['name']  ?></div>
+                        <div class="item2-price bg-price-color"><?php echo $item['price'] ?></div>
                     </div>
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/11.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
-                    </div>
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/12.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
-                    </div>
+
+
+
+                    <?php
+                            }
+
+                            ?>
+                   
                 </div>
             </div>
 
