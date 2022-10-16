@@ -1,3 +1,23 @@
+<?php
+    require_once "../dao/pdo.php";
+    require_once "../dao/products.php";
+    require_once "../dao/product-img.php";
+   
+    
+    // $dsPROD = select_prodALL();
+    // var_dump($dsPROD);
+    
+    // var_dump($dsIMG);
+
+    $dsPROD = select_prodALL();
+    
+
+    
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,89 +43,31 @@
             </div>
 
             <div class="product_in_cate">
+
+
+            <?php
+
+                foreach ($dsPROD as $item) {
+                    
+                
+
+            ?>
+
                 <div class="prod1">
-                    <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
+                    <img src="<?=CONTENT_URL?><?php echo $item['main'] ?>" alt="">
 
                     <a href="<?=SITE_URL?>?info-prod">
-                        <p>LANCOME La vie Est </p>
+                        <p><?php echo $item['name'] ?> </p>
                     </a>
 
-                    <p class="price">2.450.000₫</p>
+                    <p class="price"><?php echo $item['price'] ?>$</p>
 
                 </div>
 
-                <div class="prod2">
-                    <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
 
-                    <a href="<?=SITE_URL?>?info-prod">
-                        <p>CHRISTIAN DIOR Miss</p>
-                    </a>
-
-                    <p class="price">2.690.000₫</p>
-                </div>
-
-                <div class="prod3">
-                    <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
-
-                    <a href="<?=SITE_URL?>?info-prod">
-                        <p>Bvlgari Rose Goldea</p>
-                    </a>
-
-                    <p class="price">490.000 ₫</p>
-                </div>
-
-                <div class="prod4">
-                    <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
-
-                    <a href="<?=SITE_URL?>?info-prod">
-                        <p>Versace Pour Homme </p>
-                    </a>
-
-                    <p class="price">2.068.000 ₫</p>
-                </div>
-
-                <!-- <span>▶</span> -->
-
-                <div class="prod5">
-                    <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
-
-                    <a href="<?=SITE_URL?>?info-prod">
-                        <p>Versace Bright Absolu</p>
-                    </a>
-
-                    <p class="price">2.393.000₫</p>
-
-                </div>
-
-                <div class="prod6">
-                    <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
-
-                    <a href="<?=SITE_URL?>?info-prod">
-                        <p>Versace Bright Crystal</p>
-                    </a>
-
-                    <p class="price">1.701.000₫</p>
-                </div>
-
-                <div class="prod7">
-                    <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
-
-                    <a href="<?=SITE_URL?>?info-prod">
-                        <p>Gucci Bloom For Women</p>
-                    </a>
-<p class="price">2.069.000 ₫</p>
-                </div>
-
-                <div class="prod8">
-                    <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
-
-                    <a href="<?=SITE_URL?>?info-prod">
-                        <p>Lolita Lempicka For Women</p>
-                    </a>
-
-                    <p class="price">1.600.000₫</p>
-                </div>
-
+                <?php
+                }
+                ?>
 
 
             </div>
@@ -115,7 +77,7 @@
     </div>
 
    
-    </div>
+   
 </body>
 
 </html>

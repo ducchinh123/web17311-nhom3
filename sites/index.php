@@ -1,8 +1,15 @@
 <?php
 
     require_once "../global.php";
+    require_once "../dao/pdo.php";
+   
 
     if (isset($_GET['info-prod'])) {
+        require_once "../dao/pdo.php";
+        require_once "../dao/products.php";
+        require_once "../dao/product-img.php";
+
+        $info_product = get_products_by_cate_ids($_GET['id']);
         $VIEW_NAME="info-prod.php";
      }elseif(isset($_GET['info-cart'])){
          $VIEW_NAME="info-cart.php";
@@ -28,7 +35,22 @@
          $VIEW_NAME="search-cate-kid.php";
      }
      else{
-         $VIEW_NAME = "home-hq.php";
+
+        
+        
+        
+        require_once "../dao/categories.php";
+        require_once "../dao/products.php";
+        $list_categories_new = get_all_categories([]); 
+        $list_products_new = get_products_by_cate_ids([]); 
+
+       
+        $VIEW_NAME = "home-hq.php";
+
+     
+
+
+        
  
      }
 

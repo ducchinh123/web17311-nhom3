@@ -1,5 +1,21 @@
 <?php
 
+
+
+// Thực hành lại video hướng dẫn của Thầy.
+
+function get_all_categories($list_ids = []){
+    $sqlQuery = "select * from categories";
+
+    if (count($list_ids) > 0) {
+        $sqlQuery.= " where id in (".implode(',', $list_ids).")";
+    }
+
+    return pdo_query($sqlQuery);
+}
+
+
+
 // Truy vấn danh sách loại đã nhập
 // Mới lên trước
 
@@ -12,6 +28,9 @@
 
   
     }
+
+
+
 
 
 // Thêm mói loại
@@ -52,7 +71,7 @@
 
 // Lấy thông tin một mã loại
 
- function get_info($id){
+ function get_info_2($id){
     $sql = "SELECT * FROM `categories` where id=?";
     return pdo_query_one($sql,$id);
  }

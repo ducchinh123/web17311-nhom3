@@ -1,6 +1,6 @@
 <?php
     require_once "./dao/pdo.php";
-    require_once "./dao/product_img.php";
+    require_once "./dao/product-img.php";
 
     
     // thêm
@@ -8,7 +8,7 @@
     if (isset($_POST['prod_img'])) {
         
         
-        $up_dir = "<?=CONTENT_URL?>Images/";
+        $up_dir = "Images/product/";
         $upload_file = $up_dir.$_FILES['url']['name'];
         move_uploaded_file($_FILES['url']['tmp_name'], $upload_file);
         $url = $upload_file;
@@ -16,7 +16,7 @@
    
 
 
-        $upload_dir = "<?=CONTENT_URL?>Images/";
+        $upload_dir = "Images/product/";
         $upload_file_2 = $upload_dir.$_FILES['main']['name'];
         move_uploaded_file($_FILES['main']['tmp_name'], $upload_file_2);
         $main = $upload_file_2;

@@ -1,3 +1,10 @@
+<?php
+
+require_once "./index.php";
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,11 +50,43 @@
                         <ul>
                             <li><i class="click fa-solid fa-house-user"></i><a href="<?=SITE_URL?>">Trang chủ</a></li>
                             <li><i class="fa-regular fa-newspaper"></i><a href="">Sản phẩm</a>
+
+                            
                                 <ul class="menu-level">
-                                    <li><a href="<?=SITE_URL?>?search-cate-girl"><i class="fa-solid fa-play"></i>Nước hoa nữ</a></li>
-                                    <li><a href="<?=SITE_URL?>?search-cate-boy"><i class="fa-solid fa-play"></i>Nước hoa nam</a></li>
-                                    <li><a href="<?=SITE_URL?>?search-cate-kid"><i class="fa-solid fa-play"></i>Nước hoa cho bé</a></li>>
+
+                                <?php
+                            
+                            
+                            foreach ($list_categories_new as $cate_new){
+                              
+                                // var_dump($cate_new['name']);
+
+
+                                if ($cate_new['name']=="Nước hoa nữ") {
+                                    $link = "?search-cate-girl";
+                                }elseif ($cate_new['name']=="Nước hoa nam") {
+                                    $link = "?search-cate-boy"; 
+                                }elseif($cate_new['name']=="Nước hoa cho bé"){
+                                    $link = "?search-cate-kid";
+                                }else{
+                                    $link = "?search-cate-girl";
+                                    $link = "?search-cate-boy"; 
+                                    $link = "?search-cate-kid";
+                                }
+                                // var_dump($cate_new);
+
+                                ?>
+
+
+                                    <li><a href="<?=SITE_URL?><?php echo $link?>"><i class="fa-solid fa-play"></i><?php echo $cate_new['name'] ?></a></li>
+                                    
+                                    <?php
+                            }
+                                ?>
+ 
                                 </ul>
+
+                                
                             </li>
                             <li><i class="clicks fa-solid fa-message"></i><a href="">Thông tin</a></a></li>
                             <li><i class="clicks fa-solid fa-book"></i><a href="">Giới thiệu</a></a></li>

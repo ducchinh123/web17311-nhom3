@@ -1,6 +1,18 @@
 <?php
+    require_once "../dao/pdo.php";
+    require_once "../dao/products.php";
+    require_once "../dao/product-img.php";
+   
+    
+    // $dsPROD = select_prodALL();
+    // var_dump($dsPROD);
+    
+    // var_dump($dsIMG);
 
-        
+
+    $dsPROD_2 = select_prodALL_2();
+   
+
     
 
 ?>
@@ -30,76 +42,33 @@
                         </div>
 
                         <div class="product_in_cate">
-                                <div class="prod1">
-                                    <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
+                                    <?php
 
-                                   <a href="<?=SITE_URL?>?info-prod"><p>LANCOME La vie Est </p></a> 
+                                    foreach ($dsPROD_2 as $item) {
 
-                                    <p class="price">2.450.000₫</p>
 
-                                </div>
 
-                                <div class="prod2">
-                                    <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
+                                    ?>
 
-                                   <a href="<?=SITE_URL?>?info-prod"><p>CHRISTIAN DIOR Miss</p></a> 
+                                    <div class="prod1">
+                                    <img src="<?=CONTENT_URL?><?php echo $item['main'] ?>" alt="">
 
-                                    <p class="price">2.690.000₫</p>
-                                </div>
+                                    <a href="<?=SITE_URL?>?info-prod">
+                                        <p><?php echo $item['name'] ?> </p>
+                                    </a>
 
-                                <div class="prod3">
-                                    <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
+                                    <p class="price"><?php echo $item['price'] ?>$</p>
 
-                                    <a href="<?=SITE_URL?>?info-prod"><p>Bvlgari Rose Goldea</p></a>
+                                    </div>
 
-                                    <p class="price">490.000 ₫</p>
-                                </div>
 
-                                <div class="prod4">
-                                    <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
-
-                                    <a href="<?=SITE_URL?>?info-prod"><p>Versace Pour Homme </p></a>
-
-                                    <p class="price">2.068.000 ₫</p>
-                                </div>
-
-                                <!-- <span>▶</span> -->
-
-                                <div class="prod5">
-                                    <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
-
-                                    <a href="<?=SITE_URL?>?info-prod"><p>Versace Bright Absolu</p></a>
-
-                                    <p class="price">2.393.000₫</p>
-
-                                </div>
-
-                                <div class="prod6">
-                                    <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
-
-                                   <a href="<?=SITE_URL?>?info-prod"> <p>Versace Bright Crystal</p></a>
-<p class="price">1.701.000₫</p>
-                                </div>
-
-                                <div class="prod7">
-                                    <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
-
-                                    <a href="<?=SITE_URL?>?info-prod"><p>Gucci Bloom For Women</p></a>
-
-                                    <p class="price">2.069.000 ₫</p>
-                                </div>
-
-                                <div class="prod8">
-                                    <img src="<?=CONTENT_URL?>Images/product/1.jpg" alt="">
-
-                                    <a href="<?=SITE_URL?>?info-prod"><p>Lolita Lempicka For Women</p></a>
-
-                                    <p class="price">1.600.000₫</p>
-                                </div>
-                                
+                                    <?php
+                                    }
+                                    ?>
 
                                 
-                                
+
+                                   
                         </div>
 
 

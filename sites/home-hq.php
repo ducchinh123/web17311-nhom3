@@ -4,10 +4,15 @@
     require_once "../dao/product-img.php";
    
     
+    // $dsPROD = select_prodALL();
+    // var_dump($dsPROD);
+    
+    // var_dump($dsIMG);
 
-    // var_dump($dsALL);
-    $dsIMG = select_imgAll();
-    var_dump($dsIMG);
+    $dsPROD = select_prodALL();
+    $dsPROD_2 = select_prodALL_2();
+    $dsPROD_3 = select_prodALL_3();
+    
 
     
 
@@ -65,16 +70,16 @@
         <section class="section1">
             <div class="section-item">
                 <div class="item1">
-                    <div class="item-img bg-pink"><a href="#"><img src="<?=CONTENT_URL?>Images/list/c7de4959408784d9dd96.jpg" alt=""></a>
+                    <div class="item-img bg-pink"><a href="<?=SITE_URL?>?search-cate-boy"><img src="<?=CONTENT_URL?>Images/list/c7de4959408784d9dd96.jpg" alt=""></a>
                     </div>
                     <div class="item-tittle">Nước hoa nam</div>
                 </div>
                 <div class="item1">
-                    <div class="item-img bg-blue1"><a href="#"><img src="<?=CONTENT_URL?>Images/list/b361f286fb583f066649.jpg" alt=""></a></div>
+                    <div class="item-img bg-blue1"><a href="<?=SITE_URL?>?search-cate-girl"><img src="<?=CONTENT_URL?>Images/list/b361f286fb583f066649.jpg" alt=""></a></div>
                     <div class="item-tittle">Nước hoa nữ</div>
                 </div>
                 <div class="item1">
-                    <div class="item-img bg-blue2"><a href="#"><img src="<?=CONTENT_URL?>Images/list/8b19292721f9e5a7bce8.jpg" alt=""></a></div>
+                    <div class="item-img bg-blue2"><a href="<?=SITE_URL?>?search-cate-kid"><img src="<?=CONTENT_URL?>Images/list/8b19292721f9e5a7bce8.jpg" alt=""></a></div>
                     <div class="item-tittle">Nước hoa bé</div>
                 </div>
             </div>
@@ -133,7 +138,7 @@
 
                     <?php
 
-                            foreach ($dsIMG as $item) {
+                            foreach ($dsPROD as $item) {
                             
                             
 
@@ -141,7 +146,7 @@
                     ?>
                    
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?php echo $item['main']  ?>" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL . '?info-prod&id='. $item['product_id'] ?>"><img src="<?=CONTENT_URL?><?php echo $item['main']  ?>" alt=""></a></div>
                         <div class="item3-tittle"><?php echo $item['name']  ?></div>
                         <div class="item2-price bg-price-color"><?php echo $item['price'] ?>$</div>
                     </div>
@@ -172,48 +177,24 @@
 
 
                 <div class="section3-item3">
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/13.png" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
-                    </div>
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/1.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
-                    </div>
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/2.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
-                    </div>
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/3.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
 
-                    </div>
+                <?php
+
+                    foreach ($dsPROD_2 as $item) {
+                        
+                    
+                ?>
+                
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/4.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
+                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?><?php echo $item['main'] ?>" alt=""></a></div>
+                        <div class="item3-tittle"><?php echo $item['name'] ?></div>
+                        <div class="item2-price bg-price-color"><?php echo $item['price'] ?>$</div>
                     </div>
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/5.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
-                    </div>
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/6.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
-                    </div>
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/7.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
-                    </div>
-                </div>
+
+                    <?php
+                            }
+                    ?>
+                   
             </div>
 
 
@@ -232,48 +213,22 @@
 
 
                 <div class="section3-item3">
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/8.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
-                    </div>
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/9.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
-                    </div>
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/10.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
-                    </div>
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/11.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
 
-                    </div>
+                    <?php
+                        foreach ($dsPROD_3 as $item) {
+                            
+                        
+                    ?>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/12.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
+                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?><?php echo $item['main']  ?>" alt=""></a></div>
+                        <div class="item3-tittle"><?php echo $item['name'] ?></div>
+                        <div class="item2-price bg-price-color"><?php echo $item['price'] ?>$</div>
                     </div>
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/13.png" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
-                    </div>
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/1.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
-                    </div>
-                    <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/2.jpg" alt=""></a></div>
-                        <div class="item3-tittle">Nước hoa nam</div>
-                        <div class="item2-price bg-price-color">1.000.333$</div>
-                    </div>
-                </div>
+
+                    <?php
+                            }
+                    ?>
+                   
             </div>
 
 

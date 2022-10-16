@@ -1,16 +1,48 @@
 <?php
 
+
+// Thực hiện theo hướng dẫn của thầy
+
+function get_products_by_cate_ids($list_ids = []){
+    $sqlQuery = "select * from products";
+
+    if (count($list_ids) > 0) {
+        $sqlQuery.= " where id in (".implode(',', $list_ids).")";
+    }
+
+    return pdo_query($sqlQuery);
+}
+
+
 // Truy vấn danh sách loại đã nhập
 // Mới lên trước
+
 
     
 
 function select_prodALL(){
-    $sql = "select * from products order by id";
+    $sql = "select * from products a inner join product_img b on a.id=b.product_id where a.category_id=1";
 
     return pdo_query($sql);
 
    
+
+}
+
+
+
+function select_prodALL_2(){
+    $sql= "select * from product_img a inner join products b on a.product_id=b.id where b.category_id=2";
+
+    return pdo_query($sql);
+
+}
+
+
+function select_prodALL_3(){
+    $sql= "select * from product_img a inner join products b on a.product_id=b.id where b.category_id=3";
+
+    return pdo_query($sql);
 
 }
 

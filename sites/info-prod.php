@@ -3,8 +3,8 @@
 
 require_once "../dao/pdo.php";
 require_once "../dao/products.php";
+require_once "../dao/product-img.php";
 
-    
     
 
 
@@ -33,7 +33,7 @@ require_once "../dao/products.php";
         <section class="pro-info w-[812px] mx-auto mt-10">
             <div class="info flex ">
                 <div class="image w-[226px] h-[180px] border border-[#000000] rounded-[40px]">
-                    <img class="w-[133px] h-[141px] mx-auto mt-5" src="Images/image 21.png" alt="">
+                    <img class="w-[133px] h-[141px] mx-auto mt-5" src="<?=CONTENT_URL?><?php echo $info_product['main']  ?>" alt="">
                     <h4 class="font-[600] border-b-2 border-[#000000] mt-5 ">
                         Sản Phẩm Liên Quan
                     </h4>
@@ -44,12 +44,12 @@ require_once "../dao/products.php";
                     </div>
                 </div>
                 <div class="detail-info ml-[60px] leading-8">
-                    <p>Tên: <span class="text-[16px] font-[400]">CHRISTIAN DIOR Miss</span></p>
-                    <p>Thương hiệu: <span >Dior</span></p>
+                    <p>Tên: <span class="text-[16px] font-[400]"><?php echo $info_product['name']  ?></span></p>
+                    <p>Thương hiệu: <span ><?php echo $info_product['brand']  ?></span></p>
                     <p>Size: S M XL</p>
                     <p>Số lượng: 
                         <button>-</button>
-                        <span>1</span>
+                        <span><?php echo $info_product['quantity']  ?></span>
                         <button>+</button>
                     </p>
                 <a href="<?=SITE_URL?>?info-cart">
@@ -60,7 +60,7 @@ require_once "../dao/products.php";
                     </a>
                 </div>
                 <div class="price mt-[120px] text-left h-[25px] px-5 font-[400] text-[16px] bg-[#FFB6C1] ">
-                    <p class="">Giá: <span class="text-[#FF0000]">2.690.000đ</span></p>
+                    <p class="">Giá: <span class="text-[#FF0000]"><?php echo $info_product['price']  ?></span></p>
                 </div>
             </div> <!-- End .info-->
         </section> <!-- End .pro-info-->
