@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-    <
+    
 
             <div class="main">
                     <p class="title_list"> <a href="">Trang chủ</a> > <a href=""> Nước hoa nữ</a> > <a href="">CHRISTIAN DIOR Miss</a> > <a href="">Thanh toán </a></p>
@@ -95,19 +95,19 @@
                                         <div class="border-bottom"></div>
 
                                         <div class="info_order_left">
-                                                <p>CHRISTIAN DIOR Miss </p>
-                                                <p>Thương hiệu: <span>Diro</span> </p> 
+                                                <p><?php echo $info_cart['name']  ?></p>
+                                                <p>Thương hiệu: <span><?php echo $info_cart['brand']  ?></span> </p> 
                                                 <p>Size: <span>M</span> </p> 
-                                                <p>Số lượng: <span>1</span> </p> 
+                                                <p>Số lượng: <span><?php echo $info_cart['quantity']  ?></span> </p> 
                                         </div>
 
                                         <div class="info_order_right">
-                                                <p>2.690.000₫</p>
+                                                <p><?php echo $info_cart['price']  ?>  ₫</p>
                                         </div>
 
                                         <div class="border-bottom2"></div>
 
-                                        <p class="sum_orders">Tổng đơn hàng: <span>2.690.000₫</span></p>
+                                        <p class="sum_orders">Tổng đơn hàng: <span><?php echo $info_cart['price']  ?>₫</span></p>
                                 </div>
 
                                 <div class="pay_method">

@@ -3,6 +3,19 @@
 require_once "./index.php";
 
 
+// require_once "../dao/pdo.php";
+// require_once "../dao/products.php";
+// require_once "../dao/product-img.php";
+
+
+// function get_product_by_id_2($id){
+//     $sqlQuery = "select  * from products p inner join product_img b  on p.id=b.product_id  where p.id = $id";
+//     return pdo_query_one($sqlQuery);
+// }
+
+
+// $info_cart = get_product_by_id_2($_GET['id']);
+
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +53,7 @@ require_once "./index.php";
                         </div>
                         <div class="booklist">
                            <a href="<?=SITE_URL?>?log-in"><i class="fa-solid fa-address-book"></i></a> 
-                           <a href="<?=SITE_URL?>?info-cart"><i class="fa-solid fa-cart-shopping"></i></a> 
+                           <a href="info-cart.php"><i class="fa-solid fa-cart-shopping"></i></a> 
                         </div>
                     </div>
                 </div>

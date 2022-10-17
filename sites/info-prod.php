@@ -52,7 +52,7 @@ require_once "../dao/product-img.php";
                         <span><?php echo $info_product['quantity']  ?></span>
                         <button>+</button>
                     </p>
-                <a href="<?=SITE_URL?>?info-cart">
+                <a href="<?=SITE_URL . "?info-cart&id=" . $info_product['product_id']?>">
                     <button type="submit" class="mt-6 px-4 bg-[#FFB6C1] font-[400] text-[16px] rounded-[5px]">
                       
                     Thêm vào giỏ
@@ -60,7 +60,7 @@ require_once "../dao/product-img.php";
                     </a>
                 </div>
                 <div class="price mt-[120px] text-left h-[25px] px-5 font-[400] text-[16px] bg-[#FFB6C1] ">
-                    <p class="">Giá: <span class="text-[#FF0000]"><?php echo $info_product['price']  ?></span></p>
+                    <p class="">Giá: <span class="text-[#FF0000]"><?php echo $info_product['price']  ?>₫</span></p>
                 </div>
             </div> <!-- End .info-->
         </section> <!-- End .pro-info-->
@@ -70,19 +70,15 @@ require_once "../dao/product-img.php";
             </h4>
             <div class="mt-6 bg-[#FFB6C1] p-4 text-[#FFFFFF]">
                 <p class="text-[#FFFFFF]">
-                    Trong năm 2016, các cô nàng là tín đồ của dòng nước hoa huyền thoại Miss Dior 
-                    chắc hẳn sẽ vô cùng phấn khởi với phiên bản mới nhất của dòng nước hoa này, 
-                    đó là Miss Dior Absolutely Blooming. Với những nốt hương tươi mới của các loại hoa quả,
-                     Miss Dior Absolutely Blooming như là một món quà dành riêng để cổ vũ tinh thần lạc quan, 
-                    tươi vui cho những cô gái đang đắm chìm trong tình yêu cuộc sống.
+                    <?php echo $info_product['detail'] ?>
                 </p>
                 <div class=" mt-4 mb-4">
-                    <img class="w-[162px] h-[88px] mx-auto" src="Images/image 21.png" alt="">
+                    <img class="w-[162px] h-[88px] mx-auto" src="<?=CONTENT_URL?><?php echo $info_product['main'] ?>" alt="">
                 </div>
-                <p >
+                <!-- <p >
                     Miss Dior trước đó nhưng Miss Dior Absolute Blooming có vẻ như thể hiện một khía cạnh mới: 
                     gợi cảm, đầy đam mê và hiện đại hơn.
-                </p>
+                </p> -->
             </div>
         </section> <!-- End .detail-->
 

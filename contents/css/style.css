@@ -2053,3 +2053,27 @@ form>center>.submit_dk:hover{
     height: 26px;
 }
 /* end  */
+
+
+
+/* css cho dòng thôn báo trống giỏ hàng */
+.notification{
+    animation-name: move;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-play-state: running;
+    filter: opacity(0.9);
+    position: relative; 
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+}
+
+@keyframes move{
+    0% {left: 0; bottom: 0; right: 0; top: 0;}
+    25% {left: 0; bottom: 0; right: 0; top: 0px;}
+    50% {left: 0; bottom: 0; right: 0; top: -3px;}
+    75% {left: 0; bottom: 0; right: 0; top: 1px;}
+    100% {left: 0; bottom: 0; right: 0; top: 0;}
+}
+
+/* end  */

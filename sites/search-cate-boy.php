@@ -53,11 +53,11 @@
                                     <div class="prod1">
                                     <img src="<?=CONTENT_URL?><?php echo $item['main'] ?>" alt="">
 
-                                    <a href="<?=SITE_URL?>?info-prod">
+                                    <a href="<?=SITE_URL . '?info-prod&id='. $item['product_id'] ?>">
                                         <p><?php echo $item['name'] ?> </p>
                                     </a>
 
-                                    <p class="price"><?php echo $item['price'] ?>$</p>
+                                    <p class="price"><?php echo $item['price'] ?>₫</p>
 
                                     </div>
 

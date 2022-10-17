@@ -9,11 +9,26 @@
         require_once "../dao/products.php";
         require_once "../dao/product-img.php";
 
-        $info_product = get_products_by_cate_ids($_GET['id']);
+        $info_product = get_product_by_id($_GET['id']);
         $VIEW_NAME="info-prod.php";
      }elseif(isset($_GET['info-cart'])){
+        require_once "../dao/pdo.php";
+        require_once "../dao/products.php";
+        require_once "../dao/product-img.php";
+
+        $info_cart = get_product_by_id($_GET['id']);
+
+
          $VIEW_NAME="info-cart.php";
      }elseif(isset($_GET['info-pay'])){
+        require_once "../dao/pdo.php";
+        require_once "../dao/products.php";
+        require_once "../dao/product-img.php";
+
+        $info_cart = get_product_by_id($_GET['id']);
+
+
+
         $VIEW_NAME="info-pay.php";
      }elseif(isset($_GET['order-success'])){
         $VIEW_NAME="order-success.php";

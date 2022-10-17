@@ -1,6 +1,15 @@
 <?php
 
 
+function get_product_by_id($id){
+    $sqlQuery = "select  * from products p inner join product_img b  on p.id=b.product_id  where p.id = $id";
+    return pdo_query_one($sqlQuery);
+}
+
+
+
+
+
 // Thực hiện theo hướng dẫn của thầy
 
 function get_products_by_cate_ids($list_ids = []){

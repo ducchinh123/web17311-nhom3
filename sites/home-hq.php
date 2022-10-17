@@ -99,22 +99,22 @@
                     <div class="item2">
                         <div class="item2-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/1.jpg" alt=""></a></div>
                         <div class="item2-tittle">Versace Bright Absolu</div>
-                        <div class="item2-price bg-price-color">100$</div>
+                        <div class="item2-price bg-price-color">1.000.000 ₫</div>
                     </div>
                     <div class="item2">
                         <div class="item2-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/2.jpg" alt=""></a></div>
                         <div class="item2-tittle">Versace Bright Crystal</div>
-                        <div class="item2-price bg-price-color">70$</div>
+                        <div class="item2-price bg-price-color">2.000.000 ₫</div>
                     </div>
                     <div class="item2">
                         <div class="item2-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/3.jpg" alt=""></a></div>
                         <div class="item2-tittle">Lancôme Poême</div>
-                        <div class="item2-price bg-price-color">80$</div>
+                        <div class="item2-price bg-price-color">3.000.000 ₫</div>
                     </div>
                     <div class="item2">
                         <div class="item2-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?>Images/product/4.jpg" alt=""></a></div>
                         <div class="item2-tittle">Lolita Lempicka For Women</div>
-                        <div class="item2-price bg-price-color">65$$</div>
+                        <div class="item2-price bg-price-color">6.000.000 ₫</div>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@
                     <div class="item3">
                         <div class="item3-img bg-blue2"><a href="<?=SITE_URL . '?info-prod&id='. $item['product_id'] ?>"><img src="<?=CONTENT_URL?><?php echo $item['main']  ?>" alt=""></a></div>
                         <div class="item3-tittle"><?php echo $item['name']  ?></div>
-                        <div class="item2-price bg-price-color"><?php echo $item['price'] ?>$</div>
+                        <div class="item2-price bg-price-color"><?php echo $item['price'] ?>₫</div>
                     </div>
 
 
@@ -186,9 +186,9 @@
                 ?>
                 
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?><?php echo $item['main'] ?>" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL . '?info-prod&id='. $item['product_id'] ?>"><img src="<?=CONTENT_URL?><?php echo $item['main'] ?>" alt=""></a></div>
                         <div class="item3-tittle"><?php echo $item['name'] ?></div>
-                        <div class="item2-price bg-price-color"><?php echo $item['price'] ?>$</div>
+                        <div class="item2-price bg-price-color"><?php echo $item['price'] ?>₫</div>
                     </div>
 
                     <?php
@@ -220,9 +220,9 @@
                         
                     ?>
                     <div class="item3">
-                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL?>?info-prod"><img src="<?=CONTENT_URL?><?php echo $item['main']  ?>" alt=""></a></div>
+                        <div class="item3-img bg-blue2"><a href="<?=SITE_URL . '?info-prod&id='. $item['product_id'] ?>"><img src="<?=CONTENT_URL?><?php echo $item['main']  ?>" alt=""></a></div>
                         <div class="item3-tittle"><?php echo $item['name'] ?></div>
-                        <div class="item2-price bg-price-color"><?php echo $item['price'] ?>$</div>
+                        <div class="item2-price bg-price-color"><?php echo $item['price'] ?>₫</div>
                     </div>
 
                     <?php

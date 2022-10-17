@@ -12,6 +12,12 @@
 </head>
 
 <body>
+
+    <?php  
+        if (!empty($info_cart)) {
+          
+        
+    ?>
     <div class="main">
         <div class="main-top">
             <p>Trang chủ > Nước hoa nữ > CHRISTIAN DIOR Miss > Giỏ hàng </p>
@@ -31,25 +37,43 @@
             </thead>
 
             <tbody>
+
+          
                 <tr>
-                    <td>NHCDM 01</td>
-                    <td><img width="100px" height="105px" src="<?=CONTENT_URL?>Images/product/1.jpg"></td>
-                    <td>Dior</td>
+                    <td><?php echo $info_cart['product_id'] ?></td>
+                    <td><img width="100px" height="105px" src="<?=CONTENT_URL?><?php echo $info_cart['main'] ?>"></td>
+                    <td><?php echo $info_cart['brand']  ?></td>
                     <td>M</td>
-                    <td>- 1 +</td>
-                    <td style="color: red;">2.690.000₫</td>
+                    <td>- <?php echo $info_cart['quantity'] ?> +</td>
+                    <td style="color: red;"><?php echo $info_cart['price'] ?>₫</td>
                     <td><button><i class="fa-solid fa-trash"></i></button></td>
                 </tr>
+
+
+           
             </tbody>
         </table>
 
         <div class="main-bottom">
-            <h3>Tổng: <a>2.690.000₫</a></h3>
-            <a href="<?=SITE_URL?>?info-pay"><button type="submit">Thanh toán</button></a>
+            <h3>Tổng: <a><?php echo  $info_cart['price']  ?>₫</a></h3>
+            <a href="<?=SITE_URL. "?info-pay&id=" . $info_cart['product_id']?>"><button type="submit">Thanh toán</button></a>
         </div>
     </div>
 
     </div>
+
+    <?php
+        }else{
+            
+        
+    ?>
+
+        <h3 class="notification">Giỏ hàng của bạn chưa có gì? Hãy quay lại mua sắm nhé! <a style="text-decoration: none;" href="layout.php">👈</a></h3> 
+        
+        <?php
+
+        }
+        ?>
 </body>
 
 </html>
