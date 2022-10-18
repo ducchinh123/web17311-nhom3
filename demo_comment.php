@@ -1,6 +1,6 @@
 <?php
-      require "dao/pdo.php";
-      require "dao/comments.php";
+      require "./dao/pdo.php";
+      require "./dao/comments.php";
 
         // Xóa 
 

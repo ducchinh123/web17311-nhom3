@@ -1,7 +1,7 @@
 <?php
 
-    require "dao/pdo.php";
-    require "dao/categories.php";
+    require "./dao/pdo.php";
+    require "./dao/categories.php";
 
     if (isset($_POST['id'])) {
         update_cate($_POST['id'], $_POST['name']);
@@ -10,8 +10,11 @@
 
     if (isset($_GET['id'])) {
        $maloai = $_GET['id'];
-       $cate_info = get_info($maloai);
+       $cate_info = get_info_2($maloai);
        extract($cate_info);
+
+
+    
 
        
     

@@ -1,7 +1,7 @@
 <?php
 
-require "dao/pdo.php";
-require "dao/products.php";
+require "./dao/pdo.php";
+require "./dao/products.php";
 
 if (isset($_POST['id'])) {
     update_prod($_POST['id'], $_POST['prod'], $_POST['brand'], $_POST['quan'], $_POST['des'], $_POST['price']);
