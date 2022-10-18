@@ -1,0 +1,19 @@
+<?php
+    require_once "../global.php";
+    if (isset($_GET['list'])) {
+        $VIEW_NAME = "admin-prod/list.php";
+    }elseif(isset($_GET['list-cate'])){
+        $VIEW_NAME = "admin-cate/list-cate.php";
+    }elseif(isset($_GET['list-img'])){
+        $VIEW_NAME = "admin-img/list-img.php";
+    }elseif(isset($_GET['list-user'])){
+        $VIEW_NAME = "admin-user/list-user.php";
+    }
+    
+    
+    else{
+        $VIEW_NAME = "dashboard/home.php";
+    }
+
+    include_once "./layout.php";
+?>
