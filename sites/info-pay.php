@@ -13,7 +13,7 @@
     
 
             <div class="main">
-                    <p class="title_list"> <a href="">Trang chủ</a> > <a href=""> Nước hoa nữ</a> > <a href="">CHRISTIAN DIOR Miss</a> > <a href="">Thanh toán </a></p>
+                    <p class="title_list"> <a href="">Trang chủ</a> > <a href=""> Nước hoa nữ</a> > <a href=""><?php echo $info_cart['name']  ?></a> > <a href="">Thanh toán </a></p>
                     <div class="border-bottom"></div>
 
                     <form action="">

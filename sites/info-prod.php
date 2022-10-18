@@ -27,7 +27,7 @@ require_once "../dao/product-img.php";
     
         
         <p class="text-[#FFB6C1] mt-3 ml-3">
-            Trang chủ > Nước hoa nữ > CHRISTIAN DIOR Miss
+            Trang chủ > Nước hoa nữ > <?php echo $info_product['name']  ?>
         </p>
         <hr>
         <section class="pro-info w-[812px] mx-auto mt-10">

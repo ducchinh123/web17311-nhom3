@@ -20,7 +20,7 @@
     ?>
     <div class="main">
         <div class="main-top">
-            <p>Trang chủ > Nước hoa nữ > CHRISTIAN DIOR Miss > Giỏ hàng </p>
+            <p>Trang chủ > Nước hoa nữ > <?php echo $info_cart['name'] ?> > Giỏ hàng </p>
         </div>
 
         <table>
