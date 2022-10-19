@@ -22,7 +22,7 @@ function get_all_categories($list_ids = []){
     
 
     function select_cateALL(){
-        $sql = "select * from categories order by name";
+        $sql = "select * from categories order by id";
 
         return pdo_query($sql);
 

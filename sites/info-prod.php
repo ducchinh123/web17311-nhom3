@@ -35,12 +35,12 @@ require_once "../dao/product-img.php";
                 <div class="image w-[226px] h-[180px] border border-[#000000] rounded-[40px]">
                     <img class="w-[133px] h-[141px] mx-auto mt-5" src="<?=CONTENT_URL?><?php echo $info_product['main']  ?>" alt="">
                     <h4 class="font-[600] border-b-2 border-[#000000] mt-5 ">
-                        Sản Phẩm Liên Quan
+                        Ảnh sản phẩm
                     </h4>
                     <div class="sub-image mt-5 flex space-x-[20px]">
-                        <img class="w-[64px] h-[48px] border border-[#000000] p-[10px]" src="Images/Danh mục/d1.jpg" alt="">
-                        <img class="w-[64px] h-[48px] border border-[#000000] p-[10px]" src="Images/Danh mục/d2.jpg" alt="">
-                        <img class="w-[64px] h-[48px] border border-[#000000] p-[10px]" src="Images/Danh mục/d3.jpg" alt="">
+                        <img class="w-[64px] h-[48px] border border-[#000000] p-[10px]" src="<?=CONTENT_URL?><?php echo $info_product['url']  ?>" alt="">
+                        <img class="w-[64px] h-[48px] border border-[#000000] p-[10px]" src="<?=CONTENT_URL?><?php echo $info_product['url_2']  ?>" alt="">
+                        <img class="w-[64px] h-[48px] border border-[#000000] p-[10px]" src="<?=CONTENT_URL?><?php echo $info_product['url_3']  ?>" alt="">
                     </div>
                 </div>
                 <div class="detail-info ml-[60px] leading-8">

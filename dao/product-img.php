@@ -15,9 +15,9 @@
 
    // Thêm mới vào bảng product_Img
 
-   function insert_prod_img($url, $main, $product){
-        $sql= "insert into product_img(url, main, product_id) values(?,?,?)";
-        pdo_execute($sql, $url, $main, $product);
+   function insert_prod_img($url, $main, $product, $url_2, $url_3){
+        $sql= "insert into product_img(url, main, product_id, url_2, url_3) values(?,?,?,?,?)";
+        pdo_execute($sql, $url, $main, $product, $url_2, $url_3);
    }
 
    // Xóa bản ghi trong product_img

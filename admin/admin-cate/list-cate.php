@@ -1,3 +1,36 @@
+<?php
+
+    require_once "../dao/pdo.php";
+    require_once "../dao/categories.php";
+
+    // Lấy tất cả dữ liệu
+
+    $dsCATE = select_cateALL();
+    // var_dump($dsCATE);
+
+
+    // Thêm dữ liệu/danh mục
+
+    if (isset($_POST['inser_cate'])) {
+        insert_cate($_POST['name_cate']);
+        
+    }
+
+        // Xóa dữ liệu
+
+        if (isset($_GET['id'])) {
+            delete_cate($_GET['id']);
+     }
+
+   
+    
+
+    
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,13 +51,13 @@
             
                <h1>Thêm danh mục</h1>
             <hr>
-            <form  action="" method="POST" enctype="multipart/form-data">
+            <form  action="list-cate.php" method="POST">
                 
              
                 <h3>Tên danh mục</h3> 
-                <input type="text" class="input_form" name="" id=""> <br>
+                <input type="text" class="input_form" name="name_cate" id=""> <br>
 
-                <input type="submit" class="input_form_2" value="Thêm vào">
+                <input type="submit" name="inser_cate" class="input_form_2" value="Thêm vào">
     
             </form>
             
@@ -40,10 +73,21 @@
                     
                 </tr>
                 
+                    <?php 
+
+                        foreach ($dsCATE as $value) {
+                            
+                       
+                ?>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" style="text-decoration: none;">Xóa</a> | <a href="" style="text-decoration: none;">Sửa</a></td>
+                    <td><?php echo $value['id'] ?></td>
+                    <td><?php echo $value['name'] ?></td>
+                    <td><a onclick="confirm('Bạn có chắc muốn xóa?')" href="list-cate.php?id=<?php echo $value['id'] ?>" style="text-decoration: none;">Xóa</a> | <a href="" style="text-decoration: none;">Sửa</a>
+                </td>
+
+                <?php
+                         }
+                ?>
                     
             </table>
         </div>
