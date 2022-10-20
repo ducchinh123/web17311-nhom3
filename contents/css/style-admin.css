@@ -60,6 +60,10 @@ nav>ul>li>a>i {
     padding-right: 5px;
 }
 
+nav>ul>li>li{
+    display: none;
+}
+
 .wrapper {
     width: 82%;
     /* height: 80%; */
@@ -250,7 +254,7 @@ main>.product{
 .product-left_2{
     display: flex;
     width: 30%;
-    height: auto;
+    height: 200px;
     flex-direction: column;
     align-content: flex-start;
     background-color: #f3a68c;
@@ -269,6 +273,40 @@ main>.product{
     margin-left: 10px;
     
 }
+
+
+/* form sửa */
+
+.product>.update_cate{
+    width: 30%;
+    height: 200px;
+    background-color: #f3a68c;
+    margin-top: 30px;
+    margin-left: 20px;
+    
+
+}
+
+.product>.update_cate>h1{
+    font-family: tahoma;
+    text-align: center;
+   
+}
+
+.update_cate>form{
+    font-family: tahoma;
+    margin-left: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
 
 .product-right_2{
     width: 80%;

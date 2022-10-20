@@ -26,7 +26,7 @@ require_once "./index.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="<?=CONTENT_URL?>Images/P-SHOP.png" type="image/x-icon">
-    <title>P-SHOP</title>
+    <title>Client</title>
     <link rel="stylesheet" href="<?=CONTENT_URL?>css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- <link rel="stylesheet" href="/web17311-nhom3/contents/framework/bootstrap/css/bootstrap.min.css"> -->

@@ -32,9 +32,6 @@
                 <h3>Tên sản phẩm</h3> 
                 <input type="text" class="input_form" name="" id=""> <br>
 
-                <h3>Ảnh sản phẩm</h3> 
-                <input type="file" class="input_img" name="" id=""> <br>
-
                 <h3>Hãng</h3> 
                 <input type="text" class="input_form" name="" id=""> <br>
 
@@ -64,7 +61,6 @@
                     <th>Tên sản phẩm</th>
                     <th>Hãng</th>
                     <th>Danh mục sản phẩm</th>
-                    <th>Hình ảnh</th>
                     <th>Số lượng</th>
                     <th>Giá</th>
                     <th>Mô tả ngắn</th>
@@ -76,7 +72,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><img src="" style="width: 200px; height: 100px;" alt=""> </td>
                     <td></td>
                     <td></td>
                     <td></td>

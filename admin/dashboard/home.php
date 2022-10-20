@@ -18,10 +18,15 @@
         }
 
        .img>img{
-        width: 110%;
+        width: 100.8%;
         margin-top: 30px;
         margin-left:0px;
         height: 650px;
+       }
+
+       .img_2{
+        margin-top: -500px;
+        margin-left: 330px;
        }
     </style>
 </head>
@@ -30,6 +35,10 @@
     
     <div class="img">
     <img src="<?=CONTENT_URL?>Images/banner/banner_nen.jpg" alt="">
+    </div>
+
+    <div class="img_2">
+            <img src="<?=CONTENT_URL?>Images/banner/1-removebg-preview.png" alt="">
     </div>
 
     

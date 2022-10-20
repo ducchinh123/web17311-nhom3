@@ -52,7 +52,7 @@
                         
                 </td>
                     <td style="color: red;"><?php echo $info_cart['price'] ?>₫</td>
-                    <td><button><i class="fa-solid fa-trash"></i></button></td>
+                    <td><button><i style="background-color: white;" class="fa-regular fa-trash-can"></i></button></td>
                 </tr>
 
 
@@ -61,8 +61,8 @@
         </table>
 
         <div class="main-bottom">
-            <h3>Tổng: <a><?php echo  $info_cart['price']  ?>₫</a></h3>
-            <a href="<?=SITE_URL. "?info-pay&id=" . $info_cart['product_id']?>"><button type="submit">Thanh toán</button></a>
+            <h3>Tổng: <a style="font-size: 19px;"><?php echo  $info_cart['price']  ?>₫</a></h3>
+            <a href="<?=SITE_URL. "?info-pay&id=" . $info_cart['product_id']?>"><button style="font-size: 18px; color: white; background-color: palevioletred;" type="submit">Thanh toán</button></a>
         </div>
     </div>
 

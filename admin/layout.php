@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="<?=CONTENT_URL?>Images/P-SHOP.png" type="image/x-icon">
     <title>Admin</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="../contents/css/style-admin.css">
@@ -31,6 +32,13 @@
             <nav>
                 <ul>
 
+                <li><a href="<?=ADMIN_URL?>">
+                <i class="fa-solid fa-house"></i>
+                        <span>Trang chủ</span>
+                    </a>
+                    </li>
+
+
                 <li><a href="<?=ADMIN_URL?>?list-user">
                         <i class="fa fa-user"></i>
                         <span>Quản lý Users</span>
@@ -41,6 +49,10 @@
                     <i class="fa-solid fa-list"></i>
                         <span>Quản lí danh mục</span>
                     </a>
+
+                        <li><a href="<?=ADMIN_URL?>?update-cate"> 👉 Sửa Danh Mục</a>
+                        
+                    </li>
                     </li>
 
                     <li><a href="<?=ADMIN_URL?>?list">
