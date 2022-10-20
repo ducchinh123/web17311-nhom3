@@ -48,9 +48,9 @@ require_once "../dao/product-img.php";
                     <p>Thương hiệu: <span ><?php echo $info_product['brand']  ?></span></p>
                     <p>Size: S M XL</p>
                     <p>Số lượng: 
-                        <button>-</button>
-                        <span><?php echo $info_product['quantity']  ?></span>
-                        <button>+</button>
+                        <button class="minus">-</button>
+                        <span class="num">01</span>
+                        <button class="plus">+</button>
                     </p>
                 <a href="<?=SITE_URL . "?info-cart&id=" . $info_product['product_id']?>">
                     <button type="submit" class="mt-6 px-4 bg-[#FFB6C1] font-[400] text-[16px] rounded-[5px]">
@@ -97,6 +97,36 @@ require_once "../dao/product-img.php";
             </form>
         </section>
        
+
+        <script>
+
+            const plus = document.querySelector('.plus'),
+            minus = document.querySelector('.minus'),
+            num = document.querySelector('.num');
+
+            let a=1;
+
+            plus.addEventListener('click', ()=>{
+                a++;
+                a = (a<10)?"0"+a:a;
+                num.innerText = a;
+                // console.log(a);
+            });
+
+
+
+            minus.addEventListener('click', ()=>{
+                if (a>1) {
+                    a--;
+
+             
+                a = (a<10)?"0"+a:a;
+                num.innerText = a;
+                // console.log(a);
+                }
+            });
+
+        </script>
    
     
 </body>

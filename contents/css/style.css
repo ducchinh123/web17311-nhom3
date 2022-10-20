@@ -31,11 +31,12 @@ header {
     height: 60px;
 }
 
-header .logo img {
+.logo img {
     height: 100%;
     width: 150%;
     object-fit: cover;
 }
+
 
 .find{
     /* background-color: red; */
@@ -179,8 +180,8 @@ nav{
     top: 15px;
     border: none;
     background-color: #FFC0CB;
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: auto;
     list-style: none;
     margin-left: 10px;
     position: absolute;
@@ -743,7 +744,7 @@ height: 100%;
 }
 
 .section3{
-    height: 520px;
+    height: auto;
     margin-top: 55px ;
     position: relative;
 }

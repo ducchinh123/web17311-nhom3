@@ -51,7 +51,7 @@
             
                <h1>Thêm danh mục</h1>
             <hr>
-            <form  action="list-cate.php" method="POST">
+            <form  action="" method="post">
                 
              
                 <h3>Tên danh mục</h3> 
@@ -76,13 +76,13 @@
                     <?php 
 
                         foreach ($dsCATE as $value) {
-                            
-                       
+                            extract($value);
+                            var_dump($value);
                 ?>
                 <tr>
                     <td><?php echo $value['id'] ?></td>
                     <td><?php echo $value['name'] ?></td>
-                    <td><a onclick="confirm('Bạn có chắc muốn xóa?')" href="list-cate.php?id=<?php echo $value['id'] ?>" style="text-decoration: none;">Xóa</a> | <a href="" style="text-decoration: none;">Sửa</a>
+                    <td><a onclick="confirm('Bạn có chắc muốn xóa?')" href="list-cate.php?id=<?=$id?>" style="text-decoration: none;">Xóa</a> | <a href="" style="text-decoration: none;">Sửa</a>
                 </td>
 
                 <?php

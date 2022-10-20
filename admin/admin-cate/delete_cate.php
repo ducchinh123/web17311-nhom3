@@ -9,7 +9,7 @@ require_once "../dao/categories.php";
         delete_cate($_GET['id']);
  }
 
-    header('location: list-cate.php');
+   //  header('location: list-cate.php');
 
 
 

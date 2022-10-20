@@ -13,7 +13,7 @@
     <!-- Header start -->
         <header>
             <div class="logo">
-                <img src="../contents/Images/P-SHOP.png" alt="">
+               <img src="../contents/Images/P-SHOP.png" alt="">
             </div>
             <div class="banner">
                 <div class="banner-content">

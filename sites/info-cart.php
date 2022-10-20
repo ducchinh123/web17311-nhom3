@@ -44,7 +44,13 @@
                     <td><img width="100px" height="105px" src="<?=CONTENT_URL?><?php echo $info_cart['main'] ?>"></td>
                     <td><?php echo $info_cart['brand']  ?></td>
                     <td>M</td>
-                    <td>- <?php echo $info_cart['quantity'] ?> +</td>
+                    <td>
+
+                    <button class="minus">-</button>
+                        <span class="num">01</span>
+                        <button class="plus">+</button>
+                        
+                </td>
                     <td style="color: red;"><?php echo $info_cart['price'] ?>₫</td>
                     <td><button><i class="fa-solid fa-trash"></i></button></td>
                 </tr>
@@ -74,6 +80,38 @@
 
         }
         ?>
+
+
+
+<script>
+
+            const plus = document.querySelector('.plus'),
+            minus = document.querySelector('.minus'),
+            num = document.querySelector('.num');
+
+            let a=1;
+
+            plus.addEventListener('click', ()=>{
+                a++;
+                a = (a<10)?"0"+a:a;
+                num.innerText = a;
+                // console.log(a);
+            });
+
+
+
+            minus.addEventListener('click', ()=>{
+                if (a>1) {
+                    a--;
+
+             
+                a = (a<10)?"0"+a:a;
+                num.innerText = a;
+                // console.log(a);
+                }
+            });
+
+        </script>
 </body>
 
 </html>
