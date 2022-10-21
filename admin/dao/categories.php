@@ -38,7 +38,7 @@ function get_all_categories($list_ids = []){
 // Thêm mói loại
 
     function insert_cate($name){
-        $sql = "insert into categories(name_cate) values(?)";
+        $sql = "insert into categories(name) values(?)";
         pdo_execute($sql, $name);
     }
 
@@ -82,7 +82,7 @@ function get_all_categories($list_ids = []){
  // Cập nhật dữ liệu
 
     function update_cate($id, $name){
-        $sql = "update categories set name_cate=? where id=?";
+        $sql = "update categories set name=? where id=?";
         pdo_execute($sql, $name, $id);
 
     }

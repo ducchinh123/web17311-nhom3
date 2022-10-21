@@ -5,12 +5,21 @@ require_once "../dao/categories.php";
 
 $dsCATE = select_cateALL();
 // var_dump($dsCATE);
-$dsPRO = select_ALL();
+$dsPRO = select_ALL_2();
 // var_dump($dsPRO);
-
+// $dsCATE_inner_join  =  
 // thêm
 if (isset($_POST['save'])) {
-    insert_prod($_POST['name'], $_POST['brand'], $_POST['quantity'], $_POST['detail'], $_POST['price'], $_POST['cate']);
+  
+    $prod = $_POST['name_prod'];
+    $brand = $_POST['brand'];
+    $quan = $_POST['quantity'];
+    $des = $_POST['detail'];
+    $price = $_POST['price'];
+    $cate_id = $_POST['cate'];
+
+    insert_prod($prod, $brand, $quan, $des, $price, $cate_id);
+
     header('location: http://localhost/web17311-nhom3/admin/?list');
 
     // insert_prod($prod, $brand, $quan, $des, $price)
@@ -52,7 +61,7 @@ if (isset($_POST['save'])) {
                         foreach ($dsCATE as $key) {
 
                         ?>
-                            <option value="<?php echo $key['id']  ?>"><?php echo $key['name_cate'] ?></option>
+                            <option value="<?php echo $key['id']  ?>"><?php echo $key['name'] ?></option>
                         <?php
                         }
                         ?>
@@ -60,7 +69,7 @@ if (isset($_POST['save'])) {
 
 
                     <h3>Tên sản phẩm</h3>
-                    <input type="text" class="input_form" name="name" id=""> <br>
+                    <input type="text" class="input_form" name="name_prod" id=""> <br>
 
                     <h3>Hãng</h3>
                     <input type="text" class="input_form" name="brand" id=""> <br>
@@ -104,7 +113,7 @@ if (isset($_POST['save'])) {
                             <td><?php echo $value['id'] ?></td>
                             <td><?php echo $value['name'] ?></td>
                             <td><?php echo $value['brand'] ?></td>
-                            <td><?php echo $value['name_cate'] ?></td>
+                            <td><?php echo $value['category_id'] ?></td> 
                             <td><?php echo $value['quantity'] ?></td>
                             <td><?php echo $value['price'] ?></td>
                             <td><?php echo $value['detail'] ?></td>

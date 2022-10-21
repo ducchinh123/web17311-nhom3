@@ -1,7 +1,15 @@
 <?php
 
+function select_ALL_2(){
+    $sql = "select * from products";
+
+    return pdo_query($sql);
+}
+
+
+
 function select_ALL(){
-    $sql = "select * from products b inner join categories c on b.category_id = c.id";
+    $sql = "select * from products b inner join categories c on b.category_id=c.id";
 
     return pdo_query($sql);
 }
@@ -69,7 +77,7 @@ function select_prodALL_3(){
 // Thêm mói products
 
 function insert_prod($prod, $brand, $quan, $des, $price, $cate_id){
-    $sql = "insert into products(name,brand,quantity,detail,price) values(?,?,?,?,?,?)";
+    $sql = "insert into products(name,brand,quantity,detail,price,category_id) values(?,?,?,?,?,?)";
     pdo_execute($sql, $prod, $brand, $quan, $des, $price, $cate_id);
 }
 

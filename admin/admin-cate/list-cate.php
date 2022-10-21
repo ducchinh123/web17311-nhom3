@@ -110,7 +110,7 @@
                 ?>
                 <tr>
                     <td><?php echo $value['id'] ?></td>
-                    <td><?php echo $value['name_cate'] ?></td>
+                    <td><?php echo $value['name'] ?></td>
                     <td><a onclick="confirm('Bạn có chắc muốn xóa?')" href="<?=ADMIN_URL?>admin-cate/list-cate.php?id=<?=$id?>" style="text-decoration: none;">Xóa</a> 
 
                     | <a href="http://localhost/web17311-nhom3/admin/?update-cate&id=<?=$id?>" style="text-decoration: none;">Sửa</a>

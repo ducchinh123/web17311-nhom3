@@ -5,6 +5,13 @@ require_once "../dao/pdo.php";
 require_once "../dao/products.php";
 require_once "../dao/product-img.php";
 
+// Khắc phục lỗi Trying to access array offset on value of type bool in
+    if ($info_product==true) {
+        extract($info_product);
+    }else {
+        echo "Không hiển thị được thông tin sản phẩm";
+    }
+
     
 
 
@@ -27,32 +34,32 @@ require_once "../dao/product-img.php";
     
         
         <p class="text-[#FFB6C1] mt-3 ml-3">
-            Trang chủ > Nước hoa nữ > <?php echo $info_product['name']  ?>
+            Trang chủ > Nước hoa nữ > <?=$name  ?>
         </p>
         <hr>
         <section class="pro-info w-[812px] mx-auto mt-10">
             <div class="info flex ">
                 <div class="image w-[226px] h-[180px] border border-[#000000] rounded-[40px]">
-                    <img class="w-[133px] h-[141px] mx-auto mt-5" src="<?=CONTENT_URL?><?php echo $info_product['main']  ?>" alt="">
+                    <img class="w-[133px] h-[141px] mx-auto mt-5" src="<?=CONTENT_URL?><?=$main  ?>" alt="">
                     <h4 class="font-[600] border-b-2 border-[#000000] mt-5 ">
                         Ảnh sản phẩm
                     </h4>
                     <div class="sub-image mt-5 flex space-x-[20px]">
-                        <img class="w-[64px] h-[48px] border border-[#000000] p-[10px]" src="<?=CONTENT_URL?><?php echo $info_product['url']  ?>" alt="">
-                        <img class="w-[64px] h-[48px] border border-[#000000] p-[10px]" src="<?=CONTENT_URL?><?php echo $info_product['url_2']  ?>" alt="">
-                        <img class="w-[64px] h-[48px] border border-[#000000] p-[10px]" src="<?=CONTENT_URL?><?php echo $info_product['url_3']  ?>" alt="">
+                        <img class="w-[64px] h-[48px] border border-[#000000] p-[10px]" src="<?=CONTENT_URL?><?=$url  ?>" alt="">
+                        <img class="w-[64px] h-[48px] border border-[#000000] p-[10px]" src="<?=CONTENT_URL?><?=$url_2  ?>" alt="">
+                        <img class="w-[64px] h-[48px] border border-[#000000] p-[10px]" src="<?=CONTENT_URL?><?=$url_3  ?>" alt="">
                     </div>
                 </div>
                 <div class="detail-info ml-[60px] leading-8">
-                    <p>Tên: <span class="text-[16px] font-[400]"><?php echo $info_product['name']  ?></span></p>
-                    <p>Thương hiệu: <span ><?php echo $info_product['brand']  ?></span></p>
+                    <p>Tên: <span class="text-[16px] font-[400]"><?=$name ?></span></p>
+                    <p>Thương hiệu: <span ><?=$brand  ?></span></p>
                     <p>Size: S M XL</p>
                     <p>Số lượng: 
                         <button class="minus">-</button>
                         <span class="num">01</span>
                         <button class="plus">+</button>
                     </p>
-                <a href="<?=SITE_URL . "?info-cart&id=" . $info_product['product_id']?>">
+                <a href="<?=SITE_URL . "?info-cart&id=" . $product_id?>">
                     <button type="submit" class="mt-6 px-4 bg-[#FFB6C1] font-[400] text-[16px] rounded-[5px]">
                       
                     Thêm vào giỏ
@@ -60,7 +67,7 @@ require_once "../dao/product-img.php";
                     </a>
                 </div>
                 <div class="price mt-[120px] text-left h-[25px] px-5 font-[400] text-[16px] bg-[#FFB6C1] ">
-                    <p class="">Giá: <span class="text-[#FF0000]"><?php echo $info_product['price']  ?>₫</span></p>
+                    <p class="">Giá: <span class="text-[#FF0000]"><?=$price  ?>₫</span></p>
                 </div>
             </div> <!-- End .info-->
         </section> <!-- End .pro-info-->
@@ -70,10 +77,10 @@ require_once "../dao/product-img.php";
             </h4>
             <div class="mt-6 bg-[#FFB6C1] p-4 text-[#FFFFFF]">
                 <p class="text-[#FFFFFF]">
-                    <?php echo $info_product['detail'] ?>
+                    <?=$detail ?>
                 </p>
                 <div class=" mt-4 mb-4">
-                    <img class="w-[162px] h-[88px] mx-auto" src="<?=CONTENT_URL?><?php echo $info_product['main'] ?>" alt="">
+                    <img class="w-[162px] h-[88px] mx-auto" src="<?=CONTENT_URL?><?=$main ?>" alt="">
                 </div>
                 <!-- <p >
                     Miss Dior trước đó nhưng Miss Dior Absolute Blooming có vẻ như thể hiện một khía cạnh mới: 
