@@ -31,6 +31,13 @@ function get_all_categories($list_ids = []){
 
 // lấy
 
+function select_cateALL_1(){
+    $sql = "select * from categories";
+
+    return pdo_query_one($sql);
+
+
+}
     
 
 

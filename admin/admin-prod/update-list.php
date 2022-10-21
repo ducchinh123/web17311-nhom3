@@ -3,6 +3,10 @@ require_once "../dao/pdo.php";
 require_once "../dao/products.php";
 require_once "../dao/categories.php";
 
+$get_all_INFO = select_cateALL();
+
+   
+
 // lấy thông tin
 if (isset($_GET['id'])) {
     $codePRO = $_GET['id'];
@@ -50,7 +54,18 @@ if (isset($_POST['id'])) {
 
                     <h3>Danh mục sản phẩm</h3>
 
-                    <input type="text" class="input_form" name="cate" value="<?= $category_id ?>">
+                    <select class="input_cate" name="cate" id="">
+
+                            <?php
+                                     foreach ($get_all_INFO as $value) {
+                            ?>
+                         <option value="<?php echo $value['id'] ?>"><?php echo $value['name'] ?></option>
+
+                         <?php
+
+                                     }
+                            ?>
+                    </select>
 
 
                     <h3>Tên sản phẩm</h3>

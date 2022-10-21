@@ -13,33 +13,43 @@
 
     if (isset($_POST['insert'])) {
 
-        $path_2 = "Images/product/";
-        $name_image_2 = $path_2.$_FILES['url1']['name'];  
-        move_uploaded_file($_FILES['url1']['tmp_name'], $name_image_2);
-        $url = $name_image_2;
+        $upload_dir2 = "admin/images/"; 
+        $upload_file2 = $upload_dir2.$_FILES['url']['name'];
+        move_uploaded_file($_FILES['url']['tmp_name'], $upload_file2);
+        $url = $upload_file2;
         
-        $path = "Images/product/";
-        $name_image = $path.$_FILES['main']['name'];  
-        move_uploaded_file($_FILES['main']['tmp_name'], $name_image);
-        $main = $name_image;
-
 
         
+        $upload_dir1 = "admin/images/";
+        $upload_file1 = $upload_dir1.$_FILES['main']['name'];
+        move_uploaded_file($_FILES['main']['tmp_name'], $upload_file1);
+        $main = $upload_file1;
+
+
         $product = $_POST['product_id'];
 
-        $path_3 = "Images/product/";
-        $name_image_3 = $path_3.$_FILES['url2']['name'];
-        move_uploaded_file($_FILES['url2']['tmp_name'], $name_image_3);
-        $url_2 = $name_image_3;
 
 
-        $path_4 = "Images/product/";
-        $name_image_4 = $path_4.$_FILES['url3']['name'];
-        move_uploaded_file($_FILES['url3']['tmp_name'], $name_image_4);
-        $url_3 = $name_image_4;
+        $upload_dir3 = "admin/images/";
+        $upload_file3 = $upload_dir3.$_FILES['url_2']['name'];
+        move_uploaded_file($_FILES['url_2']['tmp_name'], $upload_file3);
+        $url_2 = $upload_file3;
+
+
+
+        $upload_dir4 = "admin/images/";
+        $upload_file4 = $upload_dir4.$_FILES['url_3']['name']; 
+        move_uploaded_file($_FILES['url_3']['tmp_name'], $upload_file4);
+        $url_3 = $upload_file4;
+
+
 
 
         
+    //     function insert_prod_img($url, $main, $product, $url_2, $url_3){
+    //         $sql= "insert into product_img(url, main, product_id, url_2, url_3) values(?,?,?,?,?)";
+    //         pdo_execute($sql, $url, $main, $product, $url_2, $url_3);
+    //    }
 
 
         insert_prod_img($url, $main, $product, $url_2, $url_3);
@@ -91,14 +101,14 @@
                 <input type="file" class="input_img" name="main" id=""> <br>
 
                 <h3>Ảnh phụ 1</h3> 
-                <input type="file" class="input_img" name="url1" id=""> <br>
+                <input type="file" class="input_img" name="url" id=""> <br>
 
                 <h3>Ảnh phụ 2</h3> 
-                <input type="file" class="input_img" name="url2" id=""> <br>
+                <input type="file" class="input_img" name="url_2" id=""> <br>
 
 
                 <h3>Ảnh phụ 3</h3> 
-                <input type="file" class="input_img" name="url3" id=""> <br>
+                <input type="file" class="input_img" name="url_3" id=""> <br>
 
             
                 
@@ -124,7 +134,7 @@
 
                 <?php
                     foreach ($dsIMG as $item) {
-                        
+                        // var_dump($item);
                     
             ?>
                 
@@ -147,6 +157,7 @@
     </div>
     
 </div>
-
+                    
+                   
 </body>
 </html>
