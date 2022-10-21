@@ -29,6 +29,14 @@ function get_all_categories($list_ids = []){
   
     }
 
+    function select_cateALL2(){
+        $sql = "select * from categories b inner join products c on b.id=c.category_id";
+
+        return pdo_query($sql);
+
+  
+    }
+
 
 
 

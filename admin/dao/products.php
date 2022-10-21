@@ -1,5 +1,9 @@
 <?php
+function select_ALL(){
+    $sql = "select * from products";
 
+    return pdo_query($sql);
+}
 
 function get_product_by_id($id){
     $sqlQuery = "select  * from products p inner join product_img b  on p.id=b.product_id  where p.id = $id";
@@ -59,7 +63,7 @@ function select_prodALL_3(){
 // Thêm mói products
 
 function insert_prod($prod, $brand, $quan, $des, $price){
-    $sql = "insert into products(name,brand,quantity,detail,pricez) values(?,?,?,?,?)";
+    $sql = "insert into products(name,brand,quantity,detail,price) values(?,?,?,?,?)";
     pdo_execute($sql, $prod, $brand, $quan, $des, $price);
 }
 
