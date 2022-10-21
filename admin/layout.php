@@ -45,12 +45,13 @@
                     </a>
                     </li>
 
-                    <li><a href="<?=ADMIN_URL?>?list-cate">
+                    <li>
+                    <a href="<?=ADMIN_URL?>?list-cate">
                     <i class="fa-solid fa-list"></i>
                         <span>Quản lí danh mục</span>
                     </a>
 
-                        <li><a href="<?=ADMIN_URL?>?update-cate"> 👉 Sửa Danh Mục</a>
+                        <li class="menu_level_1"><a href="<?=ADMIN_URL?>?update-cate"> 👉 Sửa Danh Mục</a>
                         
                     </li>
                     </li>

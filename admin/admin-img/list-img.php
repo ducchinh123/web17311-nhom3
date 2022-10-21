@@ -43,7 +43,7 @@
 
 
         insert_prod_img($url, $main, $product, $url_2, $url_3);
-
+        header('location: http://localhost/web17311-nhom3/admin/?list-img');
 
     }
 
@@ -52,6 +52,7 @@
 
     if (isset($_GET['id'])) {
         destroy_prod_img($_GET['id']);
+        header('location: http://localhost/web17311-nhom3/admin/?list-img');
     }
 
 
@@ -79,7 +80,7 @@
             
                <h1>Thêm sản phẩm</h1>
             <hr>
-            <form  action="list-img.php" method="POST" enctype="multipart/form-data">
+            <form  action="<?=ADMIN_URL?>admin-img/list-img.php" method="POST" enctype="multipart/form-data">
                 
            
                 
@@ -134,7 +135,7 @@
                     <td><img src="<?=CONTENT_URL?><?php echo $item['url_2']  ?>" style="width: 180px; height: 100px;" alt=""></td>
                     <td><img src="<?=CONTENT_URL?><?php echo $item['url_3']  ?>" style="width: 180px; height: 100px;" alt=""> </td>
                     
-                    <td><a href="list-img.php?id=<?php echo $item['id'] ?>" style="text-decoration: none;">Xóa</a> | <a href="" style="text-decoration: none;">Sửa</a>
+                    <td><a href="<?=ADMIN_URL?>admin-img/list-img.php?id=<?php echo $item['id'] ?>" style="text-decoration: none;">Xóa</a> | <a href="" style="text-decoration: none;">Sửa</a>
                 </td>
 
                     <?php
