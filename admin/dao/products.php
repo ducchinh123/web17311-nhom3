@@ -78,7 +78,16 @@ function insert_prod($prod, $brand, $quan, $des, $price, $cate){
 // Xóa 
 
 function delete_prod($id){
-    
+
+    $sql_1 = "delete from product_img where product_id=?";
+    pdo_execute($sql_1, $id);
+
+    // $sql_2 = "delete from product_size where product_id=?";
+    // pdo_execute($sql_2, $id);
+
+    // $sql_3 = "delete from sizes product_id=?";
+    // pdo_execute($sql_3, $id);
+
     $sql = "delete from products where id=?";
     pdo_execute($sql, $id);
 
