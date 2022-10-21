@@ -24,6 +24,13 @@ if (isset($_POST['save'])) {
 
     // insert_prod($prod, $brand, $quan, $des, $price)
 }
+
+//xóa
+if(isset($_GET['id'])){
+    delete_prod($_GET['id']);
+    header('location: http://localhost/web17311-nhom3/admin/?list');
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -117,7 +124,7 @@ if (isset($_POST['save'])) {
                             <td><?php echo $value['quantity'] ?></td>
                             <td><?php echo $value['price'] ?></td>
                             <td><?php echo $value['detail'] ?></td>
-                            <td><a href="" style="text-decoration: none;">Xóa</a> | <a href="" style="text-decoration: none;">Sửa</a> | <a href="<?= ADMIN_URL ?>?list-img">Thêm ảnh</a></td>
+                            <td><a href="<?=ADMIN_URL ?>admin-prod/list.php?id=<?php echo$value['id'] ?>" style="text-decoration: none;">Xóa</a> | <a href="" style="text-decoration: none;">Sửa</a> | <a href="<?= ADMIN_URL ?>?list-img">Thêm ảnh</a></td>
                         <?php
                     }
                         ?>
