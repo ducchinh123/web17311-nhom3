@@ -115,12 +115,13 @@ function get_info_prod($id){
 
 
  // Cập nhật dữ liệu
+ // Cập nhật dữ liệu
 
-    function update_prod($id, $name, $brand, $quan, $des, $price){
-        $sql = "update products set name=?, brand=?, quantity=?, detail=?, price=? where id=?";
-        pdo_execute($sql, $name, $brand, $quan, $des, $price, $id);
+ function update_prod($name, $brand, $quan, $des, $price, $cate, $id){
+    $sql = "update products set name=?, brand=?, quantity=?, detail=?, price=?, category_id=? where id=?";
+    pdo_execute($sql, $name, $brand, $quan, $des, $price, $cate, $id);
 
-    }
+}
 
 
 
