@@ -124,7 +124,8 @@ if(isset($_GET['id'])){
                             <td><?php echo $value['quantity'] ?></td>
                             <td><?php echo $value['price'] ?></td>
                             <td><?php echo $value['detail'] ?></td>
-                            <td><a href="<?=ADMIN_URL ?>admin-prod/list.php?id=<?php echo$value['id'] ?>" style="text-decoration: none;">Xóa</a> | <a href="" style="text-decoration: none;">Sửa</a> | <a href="<?= ADMIN_URL ?>?list-img">Thêm ảnh</a></td>
+                            <td><a href="<?=ADMIN_URL ?>admin-prod/list.php?id=<?php echo$value['id'] ?>" style="text-decoration: none;">Xóa</a> 
+                            | <a href="http://localhost/web17311-nhom3/admin/?update-list&id=<?php echo $value['id'] ?>" style="text-decoration: none;">Sửa</a> | <a href="<?= ADMIN_URL ?>?list-img">Thêm ảnh</a></td>
                         <?php
                     }
                         ?>

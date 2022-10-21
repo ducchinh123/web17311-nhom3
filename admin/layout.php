@@ -60,6 +60,10 @@
                         <i class="fa fa-book"></i>
                         <span>Quản lí hàng hóa</span>
                     </a>
+
+                    <li class="menu_level_1"><a href="<?=ADMIN_URL?>?update-list"> 👉 Sửa Hàng Hóa</a>
+                        
+                        </li>
                     </li>
 
 

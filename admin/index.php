@@ -2,6 +2,8 @@
     require_once "../global.php";
     if (isset($_GET['list'])) {
         $VIEW_NAME = "admin-prod/list.php";
+    }elseif(isset($_GET['update-list'])){
+        $VIEW_NAME = "admin-prod/update-list.php";
     }
     elseif(isset($_GET['list-cate'])){
         $VIEW_NAME = "admin-cate/list-cate.php";

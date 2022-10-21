@@ -3,33 +3,8 @@ require_once "../dao/pdo.php";
 require_once "../dao/products.php";
 require_once "../dao/categories.php";
 
-$dsCATE = select_cateALL();
-// var_dump($dsCATE);
-$dsPRO = select_ALL_2();
-// var_dump($dsPRO);
-// $dsCATE_inner_join  =  
-// thêm
-if (isset($_POST['save'])) {
-  
-    $prod = $_POST['name_prod'];
-    $brand = $_POST['brand'];
-    $quan = $_POST['quantity'];
-    $des = $_POST['detail'];
-    $price = $_POST['price'];
-    $cate_id = $_POST['cate'];
 
-    insert_prod($prod, $brand, $quan, $des, $price, $cate_id);
 
-    header('location: http://localhost/web17311-nhom3/admin/?list');
-
-    // insert_prod($prod, $brand, $quan, $des, $price)
-}
-
-//xóa
-if(isset($_GET['id'])){
-    delete_prod($_GET['id']);
-    header('location: http://localhost/web17311-nhom3/admin/?list');
-}
 
 ?>
 <!DOCTYPE html>
@@ -56,7 +31,7 @@ if(isset($_GET['id'])){
 
             <div class="product-left">
 
-                <h1>Thêm sản phẩm</h1>
+                <h1>Sửa sản phẩm</h1>
                 <hr>
                 <form action="" method="POST" enctype="multipart/form-data">
 
@@ -93,43 +68,14 @@ if(isset($_GET['id'])){
                     <h3>Giá</h3>
                     <input type="number" class="input_form" name="price" id=""> <br>
 
-                    <input type="submit" class="input_form_2" value="Thêm vào" name="save">
+                    <input type="submit" class="input_form_2" value="Sửa nó" name="save">
 
                 </form>
 
 
 
             </div>
-            <div class="product-right">
-                <table border="1" style="width:100%">
-                    <tr>
-                        <th>Id</th>
-                        <th>Tên sản phẩm</th>
-                        <th>Hãng</th>
-                        <th>Danh mục sản phẩm</th>
-                        <th>Số lượng</th>
-                        <th>Giá</th>
-                        <th>Mô tả ngắn</th>
-                        <th>Quản lí</th>
-                    </tr>
-                    <?php
-                    foreach ($dsPRO as $value) {
-
-                    ?>
-                        <tr>
-                            <td><?php echo $value['id'] ?></td>
-                            <td><?php echo $value['name'] ?></td>
-                            <td><?php echo $value['brand'] ?></td>
-                            <td><?php echo $value['category_id'] ?></td> 
-                            <td><?php echo $value['quantity'] ?></td>
-                            <td><?php echo $value['price'] ?></td>
-                            <td><?php echo $value['detail'] ?></td>
-                            <td><a href="<?=ADMIN_URL ?>admin-prod/list.php?id=<?php echo$value['id'] ?>" style="text-decoration: none;">Xóa</a> | <a href="" style="text-decoration: none;">Sửa</a> | <a href="<?= ADMIN_URL ?>?list-img">Thêm ảnh</a></td>
-                        <?php
-                    }
-                        ?>
-                </table>
-            </div>
+           
         </div>
 
     </div>
