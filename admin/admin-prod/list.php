@@ -3,8 +3,8 @@ require_once "../dao/pdo.php";
 require_once "../dao/products.php";
 require_once "../dao/categories.php";
 
-$dsCATE = select_cateALL2();
-var_dump($dsCATE);
+$dsCATE = select_cateALL();
+// var_dump($dsCATE);
 $dsPRO = select_ALL();
 // var_dump($dsPRO);
 
@@ -52,7 +52,7 @@ if (isset($_POST['save'])) {
                         foreach ($dsCATE as $key) {
 
                         ?>
-                            <option value=""><?php echo $key['name_cate'] ?></option>
+                            <option value="<?php echo $key['id']  ?>"><?php echo $key['name_cate'] ?></option>
                         <?php
                         }
                         ?>

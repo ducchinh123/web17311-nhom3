@@ -13,6 +13,7 @@
         $codeCATE = $_GET['id'];
         $info_cate = get_info_2($codeCATE);
         extract($info_cate);
+        
     }
 
     // bước 2: tiến hành sửa
@@ -51,7 +52,7 @@
                 
              
                 <h3>Tên danh mục</h3> 
-                <input type="text" class="input_form" name="name_cate" value="<?=$name?>" id=""> <br>
+                <input type="text" class="input_form" name="name_cate" value="<?=$name_cate?>" id=""> <br>
                 <input type="hidden" name="id" value="<?=$id?>">
                 <input type="submit" name="inser_cate" class="input_form_2" value="Sửa nó">
     

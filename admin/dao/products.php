@@ -62,9 +62,9 @@ function select_prodALL_3(){
 
 // Thêm mói products
 
-function insert_prod($prod, $brand, $quan, $des, $price){
-    $sql = "insert into products(name,brand,quantity,detail,price) values(?,?,?,?,?)";
-    pdo_execute($sql, $prod, $brand, $quan, $des, $price);
+function insert_prod($prod, $brand, $quan, $des, $price, $cate){
+    $sql = "insert into products(name,brand,quantity,detail,price,category_id) values(?,?,?,?,?,?)";
+    pdo_execute($sql, $prod, $brand, $quan, $des, $price, $cate);
 }
 
 

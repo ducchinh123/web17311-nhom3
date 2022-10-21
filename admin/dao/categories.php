@@ -29,22 +29,16 @@ function get_all_categories($list_ids = []){
   
     }
 
-    function select_cateALL2(){
-        $sql = "select * from categories b inner join products c on b.id=c.category_id";
+// lấy
 
-        return pdo_query($sql);
-
-  
-    }
-
-
+    
 
 
 
 // Thêm mói loại
 
     function insert_cate($name){
-        $sql = "insert into categories(name) values(?)";
+        $sql = "insert into categories(name_cate) values(?)";
         pdo_execute($sql, $name);
     }
 
@@ -88,7 +82,7 @@ function get_all_categories($list_ids = []){
  // Cập nhật dữ liệu
 
     function update_cate($id, $name){
-        $sql = "update categories set name=? where id=?";
+        $sql = "update categories set name_cate=? where id=?";
         pdo_execute($sql, $name, $id);
 
     }
