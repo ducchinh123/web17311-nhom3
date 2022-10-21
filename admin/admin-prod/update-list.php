@@ -3,7 +3,20 @@ require_once "../dao/pdo.php";
 require_once "../dao/products.php";
 require_once "../dao/categories.php";
 
+// lấy thông tin
+if (isset($_GET['id'])) {
+    $codePRO = $_GET['id'];
+    $infoPRO = get_info_prod($codePRO);
+    extract($infoPRO);
+}
 
+//sửa
+if (isset($_POST['id'])) {
+    update_prod($_POST['name_prod'], $_POST['brand'], $_POST['quantity'], $_POST['detail'], $_POST['price'], $_POST['cate'], $_POST['id']);
+    // update_prod($id, $name, $brand, $quan, $des, $price)
+
+    header('location: http://localhost/web17311-nhom3/admin/?list');
+}
 
 
 ?>
@@ -37,36 +50,27 @@ require_once "../dao/categories.php";
 
                     <h3>Danh mục sản phẩm</h3>
 
-                    <select class="input_cate" name="cate" id="">
-
-                        <?php
-                        foreach ($dsCATE as $key) {
-
-                        ?>
-                            <option value="<?php echo $key['id']  ?>"><?php echo $key['name'] ?></option>
-                        <?php
-                        }
-                        ?>
-                    </select>
+                    <input type="text" class="input_form" name="cate" value="<?= $category_id ?>">
 
 
                     <h3>Tên sản phẩm</h3>
-                    <input type="text" class="input_form" name="name_prod" id=""> <br>
+                    <input type="text" class="input_form" name="name_prod" id="" value="<?= $name ?>"> <br>
 
                     <h3>Hãng</h3>
-                    <input type="text" class="input_form" name="brand" id=""> <br>
+                    <input type="text" class="input_form" name="brand" id="" value="<?= $brand ?>"> <br>
 
 
                     <h3>Số lượng</h3>
-                    <input type="number" class="input_form" name="quantity" id=""> <br>
+                    <input type="number" class="input_form" name="quantity" id="" value="<?= $quantity ?>"> <br>
 
 
                     <h3>Mô tả</h3>
-                    <input type="text" class="input_form" name="detail" id=""> <br>
+                    <input type="text" class="input_form" name="detail" id="" value="<?= $detail ?>"> <br>
 
 
                     <h3>Giá</h3>
-                    <input type="number" class="input_form" name="price" id=""> <br>
+                    <input type="number" class="input_form" name="price" id="" value="<?= $price ?>"> <br>
+                    <input type="hidden" name="id" value="<?= $id ?>">
 
                     <input type="submit" class="input_form_2" value="Sửa nó" name="save">
 
@@ -75,7 +79,7 @@ require_once "../dao/categories.php";
 
 
             </div>
-           
+
         </div>
 
     </div>
