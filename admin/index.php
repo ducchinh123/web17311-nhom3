@@ -14,7 +14,10 @@
         $VIEW_NAME = "admin-cate/list-cate-update.php";
     }elseif(isset($_GET['list-img'])){
         $VIEW_NAME = "admin-img/list-img.php";
-    }elseif(isset($_GET['list-user'])){
+    }elseif(isset($_GET['update-img'])){
+        $VIEW_NAME = "admin-img/update-img.php";
+    }   
+    elseif(isset($_GET['list-user'])){
         $VIEW_NAME = "admin-user/list-user.php";
     }
     

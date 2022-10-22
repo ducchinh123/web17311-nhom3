@@ -163,7 +163,7 @@ if (isset($_GET['product_id'])) {
                     <td><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['url_2']  ?>" style="width: 180px; height: 100px;" alt=""></td>
                     <td><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['url_3']  ?>" style="width: 180px; height: 100px;" alt=""> </td>
                     
-                    <td><a href="<?=ADMIN_URL?>admin-img/list-img.php?id=<?php echo $item['id'] ?>" style="text-decoration: none;">Xóa</a> | <a href="" style="text-decoration: none;">Sửa</a>
+                    <td><a href="<?=ADMIN_URL?>admin-img/list-img.php?id=<?php echo $item['id'] ?>" style="text-decoration: none;">Xóa</a> | <a href="<?=ADMIN_URL?>admin-img/list-img.php?id=<?php echo $item['id'] ?>" style="text-decoration: none;">Sửa</a>
                 </td>
 
                     <?php

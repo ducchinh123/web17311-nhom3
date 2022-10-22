@@ -71,6 +71,10 @@
                     <i class="fa-solid fa-image"></i>
                         <span>Quản lí ảnh</span>
                     </a>
+
+                    <li class="menu_level_1"><a href="<?=ADMIN_URL?>?update-img"> 👉 Sửa ảnh</a>
+                        
+                        </li>
                     </li>
                     
 
