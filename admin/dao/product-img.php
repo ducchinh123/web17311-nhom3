@@ -1,5 +1,15 @@
 <?php
 
+
+// // lấy id product
+
+// function get_info_id_prod(){
+//      $sql= "select b.product_id from product_img b inner join products c on b.product_id=c.id";
+
+//      return pdo_query($sql);
+
+// }
+
    // Truy vấn dữ liệu
 
    function select_imgAll(){

@@ -41,7 +41,7 @@
           
                 <tr>
                     <td><?php echo $info_cart['product_id'] ?></td>
-                    <td><img width="100px" height="105px" src="<?=CONTENT_URL?><?php echo $info_cart['main'] ?>"></td>
+                    <td><img width="100px" height="105px" src="<?=ADMIN_URL?>admin-img/<?php echo $info_cart['main'] ?>"></td>
                     <td><?php echo $info_cart['brand']  ?></td>
                     <td>M</td>
                     <td>

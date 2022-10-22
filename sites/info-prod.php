@@ -40,7 +40,7 @@ require_once "../dao/product-img.php";
         <section class="pro-info w-[812px] mx-auto mt-10">
             <div class="info flex ">
                 <div class="image w-[226px] h-[180px] border border-[#000000] rounded-[40px]">
-                    <img class="w-[133px] h-[141px] mx-auto mt-5" src="<?=CONTENT_URL?><?=$main  ?>" alt="">
+                    <img class="w-[133px] h-[141px] mx-auto mt-5" src="<?=ADMIN_URL?>admin-img/<?=$main  ?>" alt="">
                     <h4 class="font-[600] border-b-2 border-[#000000] mt-5 ">
                         Ảnh sản phẩm
                     </h4>
@@ -80,7 +80,7 @@ require_once "../dao/product-img.php";
                     <?=$detail ?>
                 </p>
                 <div class=" mt-4 mb-4">
-                    <img class="w-[162px] h-[88px] mx-auto" src="<?=CONTENT_URL?><?=$main ?>" alt="">
+                    <img class="w-[162px] h-[88px] mx-auto" src="<?=ADMIN_URL?>admin-img/<?=$main ?>" alt="">
                 </div>
                 <!-- <p >
                     Miss Dior trước đó nhưng Miss Dior Absolute Blooming có vẻ như thể hiện một khía cạnh mới: 

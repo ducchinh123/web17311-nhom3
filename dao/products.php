@@ -98,6 +98,9 @@ function delete_prod($id){
     $sql_3 = "delete from sizes product_id=?";
     pdo_execute($sql_3, $id);
 
+    $sql_4 = "delete from order_detail product_id=?";
+    pdo_execute($sql_4, $id);
+
     $sql = "delete from products where id=?";
     pdo_execute($sql, $id);
 

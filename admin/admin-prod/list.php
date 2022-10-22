@@ -50,6 +50,9 @@ if(isset($_GET['id'])){
                 <h1>Đây là trang quản trị sản phẩm của P-SHOP</h1>
             </center>
         </header>
+        <h4 id="first" style="marin-top: -50px; clear: both;"><a href="#end" style="text-decoration: none; font-family: arial; margin-left: 900px;">👇Cuộn xuống </a></h4>
+
+        
 
         <div class="product">
 
@@ -101,6 +104,7 @@ if(isset($_GET['id'])){
 
             </div>
             <div class="product-right">
+        
                 <table border="1" style="width:100%">
                     <tr>
                         <th>Id</th>
@@ -118,21 +122,24 @@ if(isset($_GET['id'])){
                     ?>
                         <tr>
                             <td><?php echo $value['id'] ?></td>
-                            <td><?php echo $value['name'] ?></td>
+                            <td style="width: 100px;"><?php echo $value['name'] ?></td>
                             <td><?php echo $value['brand'] ?></td>
-                            <td><?php echo $value['category_id'] ?></td> 
+                            <td style="width: 50px;"><?php echo $value['category_id'] ?></td> 
                             <td><?php echo $value['quantity'] ?></td>
                             <td><?php echo $value['price'] ?></td>
-                            <td><?php echo $value['detail'] ?></td>
+                            <td  style="width: 300px;"><?php echo $value['detail'] ?></td>
                             <td><a href="<?=ADMIN_URL ?>admin-prod/list.php?id=<?php echo$value['id'] ?>" style="text-decoration: none;">Xóa</a> 
-                            | <a href="http://localhost/web17311-nhom3/admin/?update-list&id=<?php echo $value['id'] ?>" style="text-decoration: none;">Sửa</a> | <a href="<?= ADMIN_URL ?>?list-img">Thêm ảnh</a></td>
+                            | <a href="http://localhost/web17311-nhom3/admin/?update-list&id=<?php echo $value['id'] ?>" style="text-decoration: none;">Sửa</a> | <a href="<?= ADMIN_URL ?>?list-img&product_id=<?php echo $value['id']?> "  style="text-decoration: none;">Thêm ảnh</a></td>
                         <?php
                     }
                         ?>
                 </table>
-            </div>
-        </div>
 
+               
+            </div>
+ 
+        </div>
+        <h4 id="end" style="margin-left: 1100px;"><a href="#first" style="text-decoration: none; font-family: arial; ">👆 Cuộn lên </a></h4>
     </div>
 
 </body>

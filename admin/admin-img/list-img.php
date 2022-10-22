@@ -2,10 +2,21 @@
 
     require_once "../dao/pdo.php";
     require_once "../dao/product-img.php";
-    
+    require_once "../dao/products.php";
     // biến chứa tất cả dữ liệu
     $dsIMG = select_imgAll();
 
+
+   // lấy thông tin
+if (isset($_GET['product_id'])) {
+    $codePRO = $_GET['product_id'];
+    $infoPRO = get_info_id_prod($codePRO);
+    extract($infoPRO);
+}
+
+    // var_dump($codeID);
+
+    // var_dump($infoPRO);
     // var_dump($dsIMG);
 
 
@@ -98,8 +109,9 @@
            
                 
                 <h3>Id product</h3> 
-                <input type="text" class="input_form" name="product_id" id=""> <br>
-              
+                                                                
+                <input type="text" class="input_form" name="product_id" value="<?=$product_id ?>" id=""> <br>
+                                                                            
                 <h3>Ảnh chính</h3> 
                 <input type="file" class="input_img" name="main" id=""> <br>
 
@@ -115,7 +127,9 @@
 
             
                 
-                <input type="submit" name="insert" class="input_form_2" value="Thêm vào">
+                <input type="submit" name="insert" class="input_form_2" value="Thêm vào"><br><br>
+                <h5 style="margin-left: 80px; margin-top: -20px;  padding: 10px 10px; background-color: #FF4500;  width: 100px;">  
+                 <a href="http://localhost/web17311-nhom3/admin/?list" style="color: white; text-decoration: none; text-align: center; margin-left: 25px;" >  Trở lại</a></h5>
 
 
     
@@ -143,7 +157,7 @@
             ?>
                 
                 <tr>
-                    <td><?php echo $item['id']  ?></td>
+                    <td><?php echo $item['id']?></td>
                     <td><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['main']  ?>" style="width: 180px; height: 100px;" alt=""></td>
                     <td><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['url']  ?>" style="width: 180px; height: 100px;" alt=""></td>
                     <td><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['url_2']  ?>" style="width: 180px; height: 100px;" alt=""></td>
@@ -155,7 +169,7 @@
                     <?php
                     }
             ?>
-                    <a href=""></a>
+                    
             </table>
         </div>
     </div>

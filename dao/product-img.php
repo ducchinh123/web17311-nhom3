@@ -1,5 +1,15 @@
 <?php
 
+
+     // lấy id product
+
+function get_info_id_prod($id){
+     $sql= "select * from product_img where product_id=?";
+
+     return pdo_query_one($sql, $id);
+
+}
+
    // Truy vấn dữ liệu
 
    function select_imgAll(){
@@ -10,7 +20,6 @@
    }
 
 
-   
 
 
    // Thêm mới vào bảng product_Img
