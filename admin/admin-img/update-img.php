@@ -8,9 +8,62 @@
    // lấy thông tin
    if (isset($_GET['id'])) {
     $codePRO = $_GET['id'];
-    $infoPRO = get_info_id_prod($codePRO);
+    $infoPRO = get_info($codePRO);
     extract($infoPRO);
 }
+
+
+
+// Bắt đầu sửa
+
+      if (isset($_POST['insert'])) {
+
+
+        $upload_dir2 = "images/"; 
+        $upload_file2 = $upload_dir2.$_FILES['url']['name'];
+        move_uploaded_file($_FILES['url']['tmp_name'], $upload_file2);
+        $url = $upload_file2;
+        
+
+        
+        $upload_dir1 = "images/";
+        $upload_file1 = $upload_dir1.$_FILES['main']['name'];
+        move_uploaded_file($_FILES['main']['tmp_name'], $upload_file1);
+        $main = $upload_file1;
+
+
+        $product = $_POST['product_id'];
+
+
+
+        $upload_dir3 = "images/";
+        $upload_file3 = $upload_dir3.$_FILES['url_2']['name'];
+        move_uploaded_file($_FILES['url_2']['tmp_name'], $upload_file3);
+        $url_2 = $upload_file3;
+
+
+
+        $upload_dir4 = "images/";
+        $upload_file4 = $upload_dir4.$_FILES['url_3']['name']; 
+        move_uploaded_file($_FILES['url_3']['tmp_name'], $upload_file4);
+        $url_3 = $upload_file4;
+
+
+
+
+        
+    //     function insert_prod_img($url, $main, $product, $url_2, $url_3){
+    //         $sql= "insert into product_img(url, main, product_id, url_2, url_3) values(?,?,?,?,?)";
+    //         pdo_execute($sql, $url, $main, $product, $url_2, $url_3);
+    //    }
+
+
+        insert_prod_img($url, $main, $product, $url_2, $url_3);
+        header('location: http://localhost/web17311-nhom3/admin/?list-img');
+
+    }
+
+
         
 ?>
 
@@ -41,7 +94,7 @@
                 
                 <h3>Id product</h3> 
                                                                 
-                <input type="text" class="input_form" name="product_id" value="<?=$product_id ?>" id=""> <br>
+                <input type="text" class="input_form" name="product_id" value="<?=$product_id ?>" id="" disabled> <br>
                                                                             
                 <h3>Ảnh chính</h3> 
                 <input type="file" class="input_img" name="main"  value="<?=$main ?>" id=""> <br>
@@ -56,11 +109,14 @@
                 <h3>Ảnh phụ 3</h3> 
                 <input type="file" class="input_img" name="url_3" value="<?=$url_3 ?>" id=""> <br>
 
+               
+                <input type="hidden" class="input_img" name="id" value="<?=$id ?>" id=""> <br>
+
             
                 
                 <input type="submit" name="insert" class="input_form_2" value="Sửa nó"><br><br>
                 <h5 style="margin-left: 80px; margin-top: -20px;  padding: 10px 10px; background-color: #FF4500;  width: 100px;">  
-                 <a href="http://localhost/web17311-nhom3/admin/?list" style="color: white; text-decoration: none; text-align: center; margin-left: 25px;" >  Trở lại</a></h5>
+                 <a href="http://localhost/web17311-nhom3/admin/?list-img" style="color: white; text-decoration: none; text-align: center; margin-left: 25px;" >  Trở lại</a></h5>
 
 
     

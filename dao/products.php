@@ -25,6 +25,14 @@ function get_product_by_id($id){
 }
 
 
+// Lấy thông tin id một mã loại
+
+function get_info_id($id){
+    $sql = "select * from products where id=?";
+    return pdo_query_one($sql,$id);
+ }
+
+
 
 
 
@@ -117,7 +125,7 @@ function get_info_prod($id){
  }
 
 
- // Cập nhật dữ liệu
+
  // Cập nhật dữ liệu
 
  function update_prod($name, $brand, $quan, $des, $price, $cate, $id){

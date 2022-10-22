@@ -1,19 +1,11 @@
 <?php
 
 
-     // lấy id product
-
-function get_info_id_prod($id){
-     $sql= "select * from product_img where product_id=?";
-
-     return pdo_query_one($sql, $id);
-
-}
 
    // Truy vấn dữ liệu
 
    function select_imgAll(){
-        $sql= "select *  from product_img b inner join products c on b.product_id=c.id";
+        $sql= "select *  from product_img";
 
         return pdo_query($sql);
 
@@ -37,6 +29,14 @@ function get_info_id_prod($id){
    }
 
 
+     // Xóa ảnh trong product_img theo mục đích
+
+     function destroy_img($id){
+          $sql = "delete url, main, url_2, url_3 from product_img where id=?";
+          pdo_execute($sql,$id);
+     }
+
+
    // Lấy thông tin một mã product_img
 
  function get_info($id){
@@ -45,14 +45,43 @@ function get_info_id_prod($id){
  }
 
 
+   
    // Sửa dữ liệu trong table product_img
 
-   function update_prod_img($url, $main, $product, $id){
-        $sql = "update product_img set url=?, main=?, product_id=? where id=?";
-        pdo_execute($sql, $url, $main, $product, $id);
+   function update_prod_img($url, $main, $url_2, $url_3, $id){
+     $sql = "update product_img set url=?, main=?,url_2=?, url_3=?  where id=?";
+     pdo_execute($sql, $url, $main,$url_2, $url_3, $id);
 
 
 
-   }
+}
+
+
+
+
+
+
+// // lấy id product
+
+// function get_info_id_prod($id){
+//      $sql= "select product_id from product_img where product_id=?";
+
+//      return pdo_query_one($sql, $id);
+
+// }
+
+
+
+// lấy từ bảng product_img và bảng products
+
+
+function get_product_img_products(){
+     $sql= "select product_img.id, product_img.main, product_img.url, product_img.url_2, product_img.url_3, product_img.product_id, products.name
+       from product_img , products   where product_img.product_id=products.id";
+
+     return pdo_query($sql);
+
+}
+
 
 ?>

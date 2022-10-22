@@ -11,6 +11,10 @@
     <div class="main">
     <header><center><h1>Đây là trang quản trị người dùng của P-SHOP</h1></center></header>
 
+    <marquee behavior="" direction="">
+    <p style=""> <strong style="font-weight: bold; color: red;">*Lưu ý:</strong> Hãy điền đầy đủ các thông tin của form yêu cầu trước khi click vào "Thêm vào". </p>
+
+    </marquee>
     <div class="product">
 
 
