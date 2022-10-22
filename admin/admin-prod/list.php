@@ -50,7 +50,7 @@ if(isset($_GET['id'])){
                 <h1>Đây là trang quản trị sản phẩm của P-SHOP</h1>
             </center>
         </header>
-        <h4 id="first" style="marin-top: -50px; clear: both;"><a href="#end" style="text-decoration: none; font-family: arial; margin-left: 900px;">👇Cuộn xuống </a></h4>
+        <h4 id="first" style="margin-top: -50px; clear: both;"><a href="#end" style="text-decoration: none; font-family: arial; margin-left: 900px;">👇Cuộn xuống </a></h4>
 
         
 
