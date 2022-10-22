@@ -9,22 +9,36 @@
         
         
         $up_dir = "Images/product/";
-        $upload_file = $up_dir.$_FILES['url']['name'];
-        move_uploaded_file($_FILES['url']['tmp_name'], $upload_file);
-        $url = $upload_file;
-
-   
 
 
-        $upload_dir = "Images/product/";
-        $upload_file_2 = $upload_dir.$_FILES['main']['name'];
-        move_uploaded_file($_FILES['main']['tmp_name'], $upload_file_2);
+
+        $upload_file_1 = $up_dir.$_FILES['url']['name'];
+        move_uploaded_file($_FILES['url']['tmp_name'], $upload_file_1);
+        $url = $upload_file_1;
+
+
+        $upload_file_2 = $up_dir.$_FILES['url_2']['name'];
+        move_uploaded_file($_FILES['url_2']['tmp_name'], $upload_file_2);
         $main = $upload_file_2;
 
 
+        
+        $upload_file_3 = $up_dir.$_FILES['url_3']['name'];
+        move_uploaded_file($_FILES['url_3']['tmp_name'], $upload_file_3);
+        $url_2 = $upload_file_3;
+
+       
+        $upload_file_4 = $up_dir.$_FILES['url']['name'];
+        move_uploaded_file($_FILES['url']['tmp_name'], $upload_file_4);
+        $ur_3 = $upload_file_4;
+   
+
+
+        
+
         $product = $_POST['product_id'];
 
-        insert_prod_img($url, $main, $product);
+        insert_prod_img($url, $main, $product, $url_2, $url_3);
     }
 
 
@@ -60,6 +74,8 @@
 
 
 <form action="demo_img.php" method="POST" enctype="multipart/form-data">
+        <input type="file" name="url" value="<?php if(!empty($url)) echo $url   ?> " id="" placeholder="Link ảnh phụ"> <br> <br>
+        <input type="file" name="url" value="<?php if(!empty($url)) echo $url   ?> " id="" placeholder="Link ảnh phụ"> <br> <br>
         <input type="file" name="url" value="<?php if(!empty($url)) echo $url   ?> " id="" placeholder="Link ảnh phụ"> <br> <br>
         <input type="file" name="main" value="<?php if(!empty($main)) echo $main   ?> " id="" placeholder="Link ảnh chính"> <br> <br>
         <input type="text" name="product_id" id="" placeholder="ID Product">

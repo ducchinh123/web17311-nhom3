@@ -54,7 +54,7 @@
             ?>
 
                 <div class="prod1">
-                    <img src="<?=CONTENT_URL?><?php echo $item['main'] ?>" alt="">
+                    <img src="<?=ADMIN_URL?>admin-img/<?php echo $item['main']  ?>" alt="">
 
                     <a href="<?=SITE_URL . '?info-prod&id='. $item['product_id'] ?>">
                         <p><?php echo $item['name'] ?> </p>

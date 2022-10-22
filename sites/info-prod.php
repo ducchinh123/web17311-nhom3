@@ -45,9 +45,9 @@ require_once "../dao/product-img.php";
                         Ảnh sản phẩm
                     </h4>
                     <div class="sub-image mt-5 flex space-x-[20px]">
-                        <img class="w-[64px] h-[48px] border border-[#000000] p-[10px]" src="<?=CONTENT_URL?><?=$url  ?>" alt="">
-                        <img class="w-[64px] h-[48px] border border-[#000000] p-[10px]" src="<?=CONTENT_URL?><?=$url_2  ?>" alt="">
-                        <img class="w-[64px] h-[48px] border border-[#000000] p-[10px]" src="<?=CONTENT_URL?><?=$url_3  ?>" alt="">
+                        <img class="w-[64px] h-[48px] border border-[#000000] p-[10px]" src="<?=ADMIN_URL?>admin-img/<?=$url  ?>" alt="">
+                        <img class="w-[64px] h-[48px] border border-[#000000] p-[10px]" src="<?=ADMIN_URL?>admin-img/<?=$url_2  ?>" alt="">
+                        <img class="w-[64px] h-[48px] border border-[#000000] p-[10px]" src="<?=ADMIN_URL?>admin-img/<?=$url_3  ?>" alt="">
                     </div>
                 </div>
                 <div class="detail-info ml-[60px] leading-8">
