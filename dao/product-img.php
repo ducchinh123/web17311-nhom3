@@ -13,7 +13,7 @@ function get_info_id_prod($id){
    // Truy vấn dữ liệu
 
    function select_imgAll(){
-        $sql= "select * from product_img";
+        $sql= "select *  from product_img b inner join products c on b.product_id=c.id";
 
         return pdo_query($sql);
 

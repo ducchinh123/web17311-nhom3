@@ -8,15 +8,15 @@
 
 
    // lấy thông tin
-if (isset($_GET['product_id'])) {
-    $codePRO = $_GET['product_id'];
+if (isset($_GET['id'])) {
+    $codePRO = $_GET['id'];
     $infoPRO = get_info_id_prod($codePRO);
     extract($infoPRO);
 }
 
     // var_dump($codeID);
 
-    // var_dump($infoPRO);
+     var_dump($infoPRO);
     // var_dump($dsIMG);
 
 
@@ -141,7 +141,9 @@ if (isset($_GET['product_id'])) {
         <div class="product-right_3">
             <table border="1" style="width:100%">
                 <tr>
+
                     <th>Id</th>
+                    <th>Tên sản phẩm</th>
                     <th>Ảnh chính</th>
                     <th>Ảnh phụ 1</th>
                     <th>Ảnh phụ 2</th>
@@ -158,6 +160,7 @@ if (isset($_GET['product_id'])) {
                 
                 <tr>
                     <td><?php echo $item['id']?></td>
+                    <td><?php echo $item['name']?></td>
                     <td><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['main']  ?>" style="width: 180px; height: 100px;" alt=""></td>
                     <td><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['url']  ?>" style="width: 180px; height: 100px;" alt=""></td>
                     <td><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['url_2']  ?>" style="width: 180px; height: 100px;" alt=""></td>

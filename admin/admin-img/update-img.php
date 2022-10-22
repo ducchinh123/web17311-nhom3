@@ -6,8 +6,8 @@
  
 
    // lấy thông tin
-   if (isset($_GET['product_id'])) {
-    $codePRO = $_GET['product_id'];
+   if (isset($_GET['id'])) {
+    $codePRO = $_GET['id'];
     $infoPRO = get_info_id_prod($codePRO);
     extract($infoPRO);
 }
