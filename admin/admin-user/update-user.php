@@ -5,6 +5,18 @@
 
     $dsROLE=get_All();
     
+    if (isset($_GET['id'])) {
+        $codeUser = $_GET['id'];
+        $infoUser = get_one_user($codeUser);
+        extract($infoUser);
+
+    }
+    
+    if(isset($_POST['id']))
+{
+    update_user($_POST['name_user'], $_POST['email'], $_POST['sdt'], $_POST['role'],$_POST['id']);
+    header('location: http://localhost/web17311-nhom3/admin/?list-user');
+}
 
 
 
@@ -61,22 +73,21 @@
 
               
                 <h3>Tên người dùng</h3> 
-                <input type="text" class="input_form" name="name_user" id=""> <br>
+                <input type="text" class="input_form" name="name_user" id="name_user" value="<?= $name_user ?>"> <br>
 
-                <h3>Mật khẩu/Password</h3> 
-                <input type="password" class="input_img" name="password" id=""> <br>
+            
 
                 <h3>Địa chỉ Email</h3> 
-                <input type="email" class="input_form" name="email" id=""> <br>
+                <input type="email" class="input_form" name="email" id="email" value="<?= $email ?>"> <br>
 
                 
                 <h3>Số điện thoại</h3> 
-                <input type="number" class="input_form" name="sdt" id=""> <br>
-
+                <input type="number" class="input_form" name="sdt" id="sdt" value="<?= $sdt ?>"> <br>
+                <input type="hidden" name="id" value="<?=$id ?>">
 
                 
                 
-                <input type="submit" class="input_form_2" name="inser_in_user" value="Thêm vào">
+                <input type="submit" class="input_form_2" name="inser_in_user" value="Sửa" style="cursor: pointer;">
     
             </form>
             
