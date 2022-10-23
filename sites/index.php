@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
     require_once "../global.php";
     require_once "../dao/pdo.php";
    
@@ -38,6 +38,44 @@
     }elseif(isset($_GET['log-in'])){
         $VIEW_NAME="log-in.php";
     }
+    elseif(isset($_GET['post-login'])){
+        require_once '../dao/users.php';
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+    
+        // kiểm tra xem với email nhận đc có tài khoản nào không
+        $user = get_one_user_by_email($email);
+
+        // var_dump($user);
+
+
+
+        if(count($user) > 0){
+            // nếu có thì kiểm tra 2 mật - lưu trong db và mk đc gửi từ form
+            // xem có khớp đc với nhau hay không
+            if(password_verify($password, $user['password'])){
+                // nếu khớp thì tạo session auth để lưu thông tin tài khoản
+                $_SESSION['auth'] = [
+                    'email' => $user['email'],
+                    'name_user' => $user['name_user'],
+                    'role_id' => $user['role_id'],
+                    'name' => $user['name']
+                ];
+                header('location: ' . SITE_URL);
+                die;
+            }
+        }
+        
+    
+        header('location: ' . SITE_URL . "?log-in&msg=Tài khoản không chính xác, hãy nhập lại!");
+        die;
+    }
+
+
+
+
+
+
     elseif(isset($_GET['sign-in'])){
         $VIEW_NAME="sign-in.php";
     }

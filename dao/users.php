@@ -36,4 +36,14 @@
     }
 
 
+
+
+    // Lấy user qua email
+
+    function get_one_user_by_email($email){
+        $sql = "select  * from users u join roles r on r.id = u.role_id where email = '?' ";
+        return pdo_query_one($sql, $email);
+    }
+    
+
 ?>

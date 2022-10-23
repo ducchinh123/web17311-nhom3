@@ -115,7 +115,11 @@ require_once "./index.php";
 
             <?php   include_once $VIEW_NAME      ?>
 
-            
+            <?php if(isset($_SESSION['auth'])):?>
+                       
+                            <label for="">Xin chào, <?= $_SESSION['auth']['name_user']?></label>
+                       
+                    <?php endif?>
         </main>
 
 
