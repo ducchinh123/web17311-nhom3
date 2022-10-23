@@ -21,6 +21,13 @@
         inser_in_user($_POST['name_user'], $_POST['password'], $_POST['confirm'], $_POST['email'], $_POST['sdt'], $_POST['role']);
         header('location: http://localhost/web17311-nhom3/admin/?list-user');
     }
+    if(isset($_GET['delete_user'])){
+        delete_user($_GET['delete_user']);
+        header('location: http://localhost/web17311-nhom3/admin/?list-user');
+        
+
+    }
+   
 
 
 
@@ -137,8 +144,8 @@
                     <td><?php echo $user['email']  ?></td>
                     <td><?php echo $user['sdt']  ?></td>
                     <td><?php echo $user['role_id']  ?></td>
-                    <td><a href="" style="text-decoration: none;">Xóa</a> 
-                    | <a href="http://localhost/web17311-nhom3/admin/?update-user&id=<?php echo $user['id']  ?>" style="text-decoration: none;">Sửa</a></td>      
+                    <td><a href="<?=ADMIN_URL ?>admin-user/list-user.php?delete_user=<?php echo $user['id']  ?>" style="text-decoration: none;">Xóa</a> 
+                    | <a href="" style="text-decoration: none;">Sửa</a></td>      
 </tr>
                   <?php
 
