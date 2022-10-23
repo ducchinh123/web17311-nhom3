@@ -37,12 +37,16 @@
                         <span>Trang chủ</span>
                     </a>
                     </li>
-
+                    
 
                 <li><a href="<?=ADMIN_URL?>?list-user">
                         <i class="fa fa-user"></i>
                         <span>Quản lý Users</span>
                     </a>
+
+                    <li class="menu_level_1"><a href="<?=ADMIN_URL?>?update-user"> 👉 Sửa user</a>
+                        
+                    </li>
                     </li>
 
                     <li>

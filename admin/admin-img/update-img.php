@@ -16,52 +16,11 @@
 
 // Bắt đầu sửa
 
-      if (isset($_POST['insert'])) {
-
-
-        $upload_dir2 = "images/"; 
-        $upload_file2 = $upload_dir2.$_FILES['url']['name'];
-        move_uploaded_file($_FILES['url']['tmp_name'], $upload_file2);
-        $url = $upload_file2;
-        
-
-        
-        $upload_dir1 = "images/";
-        $upload_file1 = $upload_dir1.$_FILES['main']['name'];
-        move_uploaded_file($_FILES['main']['tmp_name'], $upload_file1);
-        $main = $upload_file1;
-
-
-        $product = $_POST['product_id'];
-
-
-
-        $upload_dir3 = "images/";
-        $upload_file3 = $upload_dir3.$_FILES['url_2']['name'];
-        move_uploaded_file($_FILES['url_2']['tmp_name'], $upload_file3);
-        $url_2 = $upload_file3;
-
-
-
-        $upload_dir4 = "images/";
-        $upload_file4 = $upload_dir4.$_FILES['url_3']['name']; 
-        move_uploaded_file($_FILES['url_3']['tmp_name'], $upload_file4);
-        $url_3 = $upload_file4;
-
-
-
-
-        
-    //     function insert_prod_img($url, $main, $product, $url_2, $url_3){
-    //         $sql= "insert into product_img(url, main, product_id, url_2, url_3) values(?,?,?,?,?)";
-    //         pdo_execute($sql, $url, $main, $product, $url_2, $url_3);
-    //    }
-
-
-        insert_prod_img($url, $main, $product, $url_2, $url_3);
+    if (isset($_POST['id'])) {
+        update_prod_img('images/'.$_FILES['url']['name'], 'images/'.$_FILES['main']['name'], 'images/'.$_FILES['url_2']['name'], 'images/'.$_FILES['url_3']['name'], $_POST['id']);
         header('location: http://localhost/web17311-nhom3/admin/?list-img');
-
     }
+      
 
 
         

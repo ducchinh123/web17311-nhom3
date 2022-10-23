@@ -51,7 +51,7 @@
 
         <div class="product-left">
             
-               <h1>Thêm người dùng</h1>
+               <h1>Sửa người dùng</h1>
             <hr>
             <form  action="" method="POST" enctype="multipart/form-data">
                 
@@ -138,7 +138,7 @@
                     <td><?php echo $user['sdt']  ?></td>
                     <td><?php echo $user['role_id']  ?></td>
                     <td><a href="" style="text-decoration: none;">Xóa</a> 
-                    | <a href="" style="text-decoration: none;">Sửa</a></td>      
+                    | <a href="http://localhost/web17311-nhom3/admin/?update-user&id=<?php echo $user['id']  ?>" style="text-decoration: none;">Sửa</a></td>      
 </tr>
                   <?php
 
