@@ -27,7 +27,7 @@
         
 
     }
-   
+
 
 
 
@@ -102,7 +102,7 @@
 
                 
                 
-                <input type="submit" class="input_form_2" name="inser_in_user" value="Thêm vào">
+                <input type="submit" class="input_form_2" name="inser_in_user" value="Thêm vào" style="cursor: pointer;">
     
             </form>
             
@@ -145,7 +145,7 @@
                     <td><?php echo $user['sdt']  ?></td>
                     <td><?php echo $user['role_id']  ?></td>
                     <td><a href="<?=ADMIN_URL ?>admin-user/list-user.php?delete_user=<?php echo $user['id']  ?>" style="text-decoration: none;">Xóa</a> 
-                    | <a href="" style="text-decoration: none;">Sửa</a></td>      
+                    | <a href="http://localhost/web17311-nhom3/admin/?update-user&id=<?php echo $user['id']?>" style="text-decoration: none;">Sửa</a></td>      
 </tr>
                   <?php
 
