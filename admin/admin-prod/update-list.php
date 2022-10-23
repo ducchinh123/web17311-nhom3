@@ -5,7 +5,7 @@ require_once "../dao/categories.php";
 
 $get_all_INFO = select_cateALL();
 
-   
+
 
 // lấy thông tin
 if (isset($_GET['id'])) {
@@ -56,15 +56,15 @@ if (isset($_POST['id'])) {
 
                     <select class="input_cate" name="cate" id="">
 
-                            <?php
-                                     foreach ($get_all_INFO as $value) {
-                            ?>
-                         <option value="<?php echo $value['id'] ?>"><?php echo $value['name'] ?></option>
+                        <?php
+                        foreach ($get_all_INFO as $value) {
+                        ?>
+                            <option value="<?php echo $value['id'] ?>"><?php echo $value['name'] ?></option>
 
-                         <?php
+                        <?php
 
-                                     }
-                            ?>
+                        }
+                        ?>
                     </select>
 
 
