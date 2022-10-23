@@ -19,6 +19,8 @@
     }   
     elseif(isset($_GET['list-user'])){
         $VIEW_NAME = "admin-user/list-user.php";
+    }elseif(isset($_GET['update-user'])){
+        $VIEW_NAME = "admin-user/update-user.php";
     }
     
     
