@@ -3,12 +3,25 @@
 
 // // lấy id product
 
-// function get_info_id_prod(){
-//      $sql= "select b.product_id from product_img b inner join products c on b.product_id=c.id";
+// function get_info_id_prod($id){
+//      $sql= "select * from product_img b inner join products c on b.product_id=c.id";
 
-//      return pdo_query($sql);
+//      return pdo_query($sql, $id);
 
 // }
+
+
+
+// lấy từ bảng product_img và bảng products
+
+
+function get_product_img_products(){
+     $sql= "select product_img.id, product_img.main, product_img.url, product_img.url_2, product_img.url_3, product_img.product_id, products.name
+       from product_img , products   where product_img.product_id=products.id";
+
+     return pdo_query($sql);
+
+}
 
    // Truy vấn dữ liệu
 
@@ -48,12 +61,15 @@
 
    // Sửa dữ liệu trong table product_img
 
-   function update_prod_img($url, $main, $product, $id){
-        $sql = "update product_img set url=?, main=?, product_id=? where id=?";
-        pdo_execute($sql, $url, $main, $product, $id);
+   function update_prod_img($url, $main, $url_2, $url_3, $id){
+        $sql = "update product_img set url=?, main=?, url_2=?, url_3=?  where id=?";
+        pdo_execute($sql, $url, $main,$url_2, $url_3, $id);
 
 
 
    }
+
+
+
 
 ?>

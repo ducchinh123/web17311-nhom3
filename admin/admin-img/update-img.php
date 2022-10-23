@@ -8,9 +8,21 @@
    // lấy thông tin
    if (isset($_GET['id'])) {
     $codePRO = $_GET['id'];
-    $infoPRO = get_info_id_prod($codePRO);
+    $infoPRO = get_info($codePRO);
     extract($infoPRO);
 }
+
+
+
+// Bắt đầu sửa
+
+    if (isset($_POST['id'])) {
+        update_prod_img('images/'.$_FILES['url']['name'], 'images/'.$_FILES['main']['name'], 'images/'.$_FILES['url_2']['name'], 'images/'.$_FILES['url_3']['name'], $_POST['id']);
+        header('location: http://localhost/web17311-nhom3/admin/?list-img');
+    }
+      
+
+
         
 ?>
 
@@ -41,7 +53,7 @@
                 
                 <h3>Id product</h3> 
                                                                 
-                <input type="text" class="input_form" name="product_id" value="<?=$product_id ?>" id=""> <br>
+                <input type="text" class="input_form" name="product_id" value="<?=$product_id ?>" id="" disabled> <br>
                                                                             
                 <h3>Ảnh chính</h3> 
                 <input type="file" class="input_img" name="main"  value="<?=$main ?>" id=""> <br>
@@ -56,11 +68,14 @@
                 <h3>Ảnh phụ 3</h3> 
                 <input type="file" class="input_img" name="url_3" value="<?=$url_3 ?>" id=""> <br>
 
+               
+                <input type="hidden" class="input_img" name="id" value="<?=$id ?>" id=""> <br>
+
             
                 
                 <input type="submit" name="insert" class="input_form_2" value="Sửa nó"><br><br>
                 <h5 style="margin-left: 80px; margin-top: -20px;  padding: 10px 10px; background-color: #FF4500;  width: 100px;">  
-                 <a href="http://localhost/web17311-nhom3/admin/?list" style="color: white; text-decoration: none; text-align: center; margin-left: 25px;" >  Trở lại</a></h5>
+                 <a href="http://localhost/web17311-nhom3/admin/?list-img" style="color: white; text-decoration: none; text-align: center; margin-left: 25px;" >  Trở lại</a></h5>
 
 
     

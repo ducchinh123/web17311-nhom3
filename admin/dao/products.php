@@ -66,6 +66,14 @@ function select_prodALL_3(){
 }
 
 
+
+
+function get_info_id($id){
+    $sql = "select * from products where id=?";
+    return pdo_query_one($sql,$id);
+ }
+
+
 // Thêm mói products
 
 function insert_prod($prod, $brand, $quan, $des, $price, $cate){

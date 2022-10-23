@@ -4,19 +4,8 @@
     require_once "../dao/product-img.php";
     require_once "../dao/products.php";
     // biến chứa tất cả dữ liệu
-    $dsIMG = select_imgAll();
+    $dsIMG = get_product_img_products();
 
-
-   // lấy thông tin
-if (isset($_GET['id'])) {
-    $codePRO = $_GET['id'];
-    $infoPRO = get_info_id_prod($codePRO);
-    extract($infoPRO);
-}
-
-    // var_dump($codeID);
-
-     var_dump($infoPRO);
     // var_dump($dsIMG);
 
 
@@ -97,20 +86,25 @@ if (isset($_GET['id'])) {
     <div class="main">
     <header><center><h1>Đây là trang quản trị ảnh sản phẩm của P-SHOP</h1></center></header>
 
-    <div class="product">
+    <marquee behavior="" direction="">
+    <p style=""> <strong style="font-weight: bold; color: red;">*Lưu ý:</strong> Hãy kiểm tra <span style="font-weight: bold; color: black;">sản phẩm</span> đã <span style="font-weight: bold; color: black;">có ảnh</span> hay <span style="font-weight: bold; color: black;">chưa</span> 
+    thông qua cột ID PRODUCT bên cạnh trước khi muốn thêm hoặc sửa ảnh.</p>
 
+
+    </marquee>
+    <div class="product">
 
         <div class="product-left_3">
             
-               <h1>Thêm sản phẩm</h1>
+               <h1>Thêm ảnh sản phẩm</h1>
             <hr>
             <form  action="<?=ADMIN_URL?>admin-img/list-img.php" method="POST" enctype="multipart/form-data">
                 
            
                 
                 <h3>Id product</h3> 
-                                                                
-                <input type="text" class="input_form" name="product_id" value="<?=$product_id ?>" id=""> <br>
+                                                              
+                <input type="text" placeholder="*Vui lòng điền id product muốn thêm ảnh" class="input_form" name="product_id" id=""> <br>
                                                                             
                 <h3>Ảnh chính</h3> 
                 <input type="file" class="input_img" name="main" id=""> <br>
@@ -142,13 +136,14 @@ if (isset($_GET['id'])) {
             <table border="1" style="width:100%">
                 <tr>
 
-                    <th>Id</th>
-                    <th>Tên sản phẩm</th>
-                    <th>Ảnh chính</th>
-                    <th>Ảnh phụ 1</th>
-                    <th>Ảnh phụ 2</th>
-                    <th>Ảnh phụ 3</th>
-                    <th>Quản lí</th>
+                    <th style="font-family: arial;">Id</th>
+                    <th style="font-family: arial;">Id product</th>
+                    <th style="font-family: arial;">Tên sản phẩm</th>
+                    <th style="font-family: arial;">Ảnh chính</th>
+                    <th style="font-family: arial;">Ảnh phụ 1</th>
+                    <th style="font-family: arial;">Ảnh phụ 2</th>
+                    <th style="font-family: arial;">Ảnh phụ 3</th>
+                    <th style="font-family: arial;">Quản lí</th>
                 </tr>
 
                 <?php
@@ -159,16 +154,18 @@ if (isset($_GET['id'])) {
             ?>
                 
                 <tr>
-                    <td><?php echo $item['id']?></td>
-                    <td><?php echo $item['name']?></td>
-                    <td><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['main']  ?>" style="width: 180px; height: 100px;" alt=""></td>
-                    <td><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['url']  ?>" style="width: 180px; height: 100px;" alt=""></td>
-                    <td><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['url_2']  ?>" style="width: 180px; height: 100px;" alt=""></td>
-                    <td><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['url_3']  ?>" style="width: 180px; height: 100px;" alt=""> </td>
+                    <td style="text-align: center; width: 20px; font-family: arial;"><?php echo $item['id']?></td>
+                    <td style="text-align: center; width: 1px; font-family: arial;"><?php echo $item['product_id']?></td>
+                    <td style="width: 300px; font-family: arial; margin-left: 5px;"><?php echo $item['name']?></td>
+                    <td><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['main']  ?>" style="width: 100px; height: 100px;" alt=""></td>
+                    <td><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['url']  ?>" style="width: 100px; height: 100px;" alt=""></td>
+                    <td><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['url_2']  ?>" style="width: 100px; height: 100px;" alt=""></td>
+                    <td><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['url_3']  ?>" style="width: 100px; height: 100px;" alt=""> </td>
                     
-                    <td><a href="<?=ADMIN_URL?>admin-img/list-img.php?id=<?php echo $item['id'] ?>" style="text-decoration: none;">Xóa</a> | <a href="<?=ADMIN_URL?>admin-img/list-img.php?id=<?php echo $item['id'] ?>" style="text-decoration: none;">Sửa</a>
+                    <td style="text-align: center; font-family: arial;"><a href="<?=ADMIN_URL?>admin-img/list-img.php?id=<?php echo $item['id'] ?>" style="text-decoration: none;">Xóa</a> <br><br>
+                     <a href="http://localhost/web17311-nhom3/admin/?update-img&id=<?php echo $item['id'] ?>" style="text-decoration: none;">Sửa</a>
                 </td>
-
+</tr>
                     <?php
                     }
             ?>

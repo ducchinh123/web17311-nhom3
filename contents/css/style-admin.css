@@ -397,6 +397,20 @@ main>.product{
 }
 
 
+.product-right_3 > table{
+    width: 100%;
+    background-color: #fcf8e3;
+    border: #fff;
+    font-family: arial;
+}
+
+
+.product-right_3 > table>tr>th>tr>td{
+    font-family: arial;
+}
+
+
+
 .product-left_3>.input_form{
     width: 300px;
     height: 30px;

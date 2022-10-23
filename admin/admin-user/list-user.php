@@ -30,6 +30,7 @@
 
 
 
+
     // hiển thị tất cả các user
 
     $dsUSER= select_all_user();
@@ -48,12 +49,16 @@
     <div class="main">
     <header><center><h1>Đây là trang quản trị người dùng của P-SHOP</h1></center></header>
 
+    <marquee behavior="" direction="">
+    <p style=""> <strong style="font-weight: bold; color: red;">*Lưu ý:</strong> Hãy điền đầy đủ các thông tin của form yêu cầu trước khi click vào "Thêm vào". </p>
+
+    </marquee>
     <div class="product">
 
 
         <div class="product-left">
             
-               <h1>Thêm người dùng</h1>
+               <h1>Sửa người dùng</h1>
             <hr>
             <form  action="" method="POST" enctype="multipart/form-data">
                 
