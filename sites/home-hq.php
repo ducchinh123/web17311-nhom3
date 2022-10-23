@@ -147,7 +147,7 @@
                    
                     <div class="item3">
                         <div class="item3-img bg-blue2"><a href="<?=SITE_URL . '?info-prod&id='. $item['product_id'] ?>"><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['main']  ?>" alt=""></a></div>
-                        <div class="item3-tittle"><?php echo $item['name']  ?></div>
+                        <div class="item3-tittle" style="width: 150px;"><?php echo $item['name']  ?></div>
                         <div class="item2-price bg-price-color"><?php echo $item['price'] ?>₫</div>
                     </div>
 
@@ -187,7 +187,7 @@
                 
                     <div class="item3">
                         <div class="item3-img bg-blue2"><a href="<?=SITE_URL . '?info-prod&id='. $item['product_id'] ?>"><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['main'] ?>" alt=""></a></div>
-                        <div class="item3-tittle"><?php echo $item['name'] ?></div>
+                        <div class="item3-tittle" style="width: 150px;"><?php echo $item['name'] ?></div>
                         <div class="item2-price bg-price-color"><?php echo $item['price'] ?>₫</div>
                     </div>
 
@@ -221,7 +221,7 @@
                     ?>
                     <div class="item3">
                         <div class="item3-img bg-blue2"><a href="<?=SITE_URL . '?info-prod&id='. $item['product_id'] ?>"><img src="<?=ADMIN_URL?>admin-img/<?php echo $item['main']  ?>" alt=""></a></div>
-                        <div class="item3-tittle"><?php echo $item['name'] ?></div>
+                        <div class="item3-tittle" style="width: 150px;"><?php echo $item['name'] ?></div>
                         <div class="item2-price bg-price-color"><?php echo $item['price'] ?>₫</div>
                     </div>
 
